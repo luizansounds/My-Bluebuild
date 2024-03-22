@@ -16,12 +16,65 @@ modules:
           # copies config/files/usr into your image's /usr.
           # put configuration files you want in /etc/ on a booted system 
           # in /usr/etc/ in the image. read more in files module reference.
-
   - type: rpm-ostree
-    repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    repos: 
+    - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
+    - https://flathub.org/repo/flathub.flatpakrepo
+    - https://copr.fedorainfracloud.org/coprs/patrickl/yabridge/repo/fedora-%OS_VERSION%/patrickl-yabridge-fedora-%OS_VERSION%.repo
+    - https://raw.githubusercontent.com/Luiza1011/swayfx-blue-personal/live/vivaldi.repo
+    - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/lchh/navidrome/repo/fedora-%OS_VERSION%/lchh-navidrome-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/luiza1011/Lu-dotfiles/repo/fedora-%OS_VERSION%/luiza1011-Lu-dotfiles-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/champe20/apx/repo/fedora-%OS_VERSION%/champe20-apx-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
+
+    - starship
+    - rust
+    - cargo    
+    - python-pip
+    - libadwaita
+    - go
+    - zsh
+    - zsh-autosuggestions
+    - tmux
+    - dialog
+    - fontawesome-fonts
+    
+    - unrar
+    - p7zip 
+    - p7zip-plugins
+    
+    #- terminator
+    #- swayfx
+    #- rofi
+    #- swaync
+    #- waybar
+    #- network-manager-applet
+    #- sddm
+    - yakuake
+    - neovim
+    - micro
+    #- pavucontrol
+    #- blueman
+    - htop
+    - mc
+    #- fastfetch
+    - nautilus
+    #- nemo
+    #- nemo-fileroller
+    #- grim
+    #- pamixer
+    - playerctl
+    - steam-devices
+    - steam
+    #- noip
+    - mediawriter
+    #- azote
+    #- nwg-drawer
+    - nwg-look
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency

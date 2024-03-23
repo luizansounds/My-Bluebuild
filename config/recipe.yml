@@ -38,6 +38,7 @@ modules:
     - zsh
     - zsh-autosuggestions
     - tmux
+    - dialog
     
     - unrar
     - p7zip 

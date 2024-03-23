@@ -28,7 +28,6 @@ modules:
     - https://copr.fedorainfracloud.org/coprs/luiza1011/Lu-dotfiles/repo/fedora-%OS_VERSION%/luiza1011-Lu-dotfiles-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/champe20/apx/repo/fedora-%OS_VERSION%/champe20-apx-fedora-%OS_VERSION%.repo
-    - https://copr.fedorainfracloud.org/coprs/fnux/ly/repo/fedora-%OS_VERSION%/fnux-ly-fedora-%OS_VERSION%.repo
     
     install:
     - starship
@@ -62,7 +61,7 @@ modules:
     - nemo
     - nemo-fileroller
     - grim
-    - slurp
+    
     - pamixer
     - playerctl
     - polkit-gnome

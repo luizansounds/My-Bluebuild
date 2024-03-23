@@ -28,8 +28,9 @@ modules:
     - https://copr.fedorainfracloud.org/coprs/luiza1011/Lu-dotfiles/repo/fedora-%OS_VERSION%/luiza1011-Lu-dotfiles-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/champe20/apx/repo/fedora-%OS_VERSION%/champe20-apx-fedora-%OS_VERSION%.repo
+    
     install:
-  - starship
+    - starship
     - rust
     - cargo    
     - python-pip
@@ -63,12 +64,8 @@ modules:
     - playerctl
     - polkit-gnome
     - firewall-config
-    - steam-devices
-    - noip
-    - mediawriter
+    - steam
     - azote
-    - nwg-drawer
-    - nwg-look
     
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -98,12 +95,7 @@ modules:
        - net.pcsx2.PCSX2  
        - org.DolphinEmu.dolphin-emu
        - com.usebottles.bottles
-       - com.valvesoftware.Steam
        - dev.vencord.Vesktop
-       - org.freedesktop.Platform.VulkanLayer.gamescope 
-       - org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
-       - com.valvesoftware.Steam.Utility.steamtinkerlaunch
-       - net.davidotek.pupgui2
        - org.libreoffice.LibreOffice
        - md.obsidian.Obsidian
        - io.github.giantpinkrobots.varia

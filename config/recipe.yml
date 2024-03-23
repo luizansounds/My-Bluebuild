@@ -64,8 +64,10 @@ modules:
     - playerctl
     - polkit-gnome
     - firewall-config
+    - seahorse
     - steam
     - azote
+    - nwg-look
     
     remove:
       # example: removing firefox (in favor of the flatpak)

@@ -73,8 +73,8 @@ modules:
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -84,6 +84,36 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
+       - org.gnome.Boxes
+       - org.gnome.clocks
+       - org.gnome.FontManager
+       - org.fedoraproject.MediaWriter
+       - com.github.tchx84.Flatseal
+       - org.gustavoperedo.FontDownloader
+       - com.github.GradienceTeam.Gradience 
+       - io.mpv.Mpv
+       - org.rncbc.qpwgraph
+       - org.gimp.GIMP
+       - org.prismlauncher.PrismLauncher
+       - net.pcsx2.PCSX2  
+       - org.DolphinEmu.dolphin-emu
+       - com.usebottles.bottles
+       - com.valvesoftware.Steam
+       - dev.vencord.Vesktop
+       - org.freedesktop.Platform.VulkanLayer.gamescope 
+       - org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
+       - com.valvesoftware.Steam.Utility.steamtinkerlaunch
+       - net.davidotek.pupgui2
+       - org.libreoffice.LibreOffice
+       - md.obsidian.Obsidian
+       - io.github.giantpinkrobots.varia
+       - com.transmissionbt.Transmission
+       - com.visualstudio.code
+       - org.gtk.Gtk3theme.adw-gtk3 
+       - org.gtk.Gtk3theme.adw-gtk3-dark  
+       - runtime/org.kde.KStyle./x86_64/6.5 
+       - runtime/org.kde.KStyle.Kvantum/x86_64/latest 
+       - runtime/org.kde.PlatformTheme.QGnomePlatform/x86_64/6.6
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

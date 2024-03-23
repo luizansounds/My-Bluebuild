@@ -4,8 +4,8 @@ name: my-bluebuild
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
-image-version: 39 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/ucore
+image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -46,21 +46,23 @@ modules:
     - p7zip-plugins
     
     - terminator
+
     - swayfx
-    - rofi
     - swaync
+    - rofi
     - waybar
     - network-manager-applet
+    - blueman
     
     - neovim
     - pavucontrol
-    - blueman
     - htop
     - mc
     - fastfetch
     - nemo
     - nemo-fileroller
     - grim
+    - slurp
     - pamixer
     - playerctl
     - polkit-gnome
@@ -70,6 +72,7 @@ modules:
     - azote
     - nwg-look
     - ffmpeg
+
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency

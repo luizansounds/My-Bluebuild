@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 HEIGHT=15
@@ -10,7 +9,7 @@ MENU="Choose one of the following options:"
 
 OPTIONS=(1 "Install W/ Flatpak"
          2 "Install W/o Flatpak"
-         3 "Default Sway Config"
+         3 "Reboot"
          4 "Shutdown")
 
 CHOICE=$(dialog --clear \
@@ -29,7 +28,9 @@ case $CHOICE in
         2)
             git -C ~/.local clone https://github.com/luizansounds/lu-dotfiles && sh ~/.local/lu-dotfiles/install-no-flatpak.sh
             ;;
-        3)  mv /usr/etc/sway/config.ini ~/.config/sway/config
+
+        3)  
+            systemctl reboot
             ;;
         4)
             systemctl poweroff

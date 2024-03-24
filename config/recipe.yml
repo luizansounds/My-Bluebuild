@@ -28,7 +28,8 @@ modules:
     - https://copr.fedorainfracloud.org/coprs/luiza1011/Lu-dotfiles/repo/fedora-%OS_VERSION%/luiza1011-Lu-dotfiles-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/champe20/apx/repo/fedora-%OS_VERSION%/champe20-apx-fedora-%OS_VERSION%.repo
-    
+    - https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
+
     install:
     - starship
     - rust
@@ -62,6 +63,7 @@ modules:
     - nemo-fileroller
     - grim
     - slurp
+    - gscreenshot
     - pamixer
     - playerctl
     - polkit-gnome
@@ -75,8 +77,8 @@ modules:
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+     - firefox
+     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)

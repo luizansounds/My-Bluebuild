@@ -46,6 +46,7 @@ modules:
     - p7zip-plugins
     
     - terminator
+    - eza
 
     - swayfx
     - swaync

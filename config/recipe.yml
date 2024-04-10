@@ -73,6 +73,9 @@ modules:
     - azote
     - nwg-look
     - ffmpeg
+    - gparted
+    - cava
+    - fftw3
 
     remove:
       # example: removing firefox (in favor of the flatpak)

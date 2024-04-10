@@ -27,6 +27,7 @@ modules:
     - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/champe20/apx/repo/fedora-%OS_VERSION%/champe20-apx-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/tiritor/waybar/repo/fedora-%OS_VERSION%/tiritor-waybar-fedora-%OS_VERSION%.repo
 
     install:
     - starship

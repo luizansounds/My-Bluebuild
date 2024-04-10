@@ -77,6 +77,8 @@ modules:
     - gparted
     - cava
     - fftw3
+    - kvantum
+    
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -104,9 +106,6 @@ modules:
        - org.gimp.GIMP
        - org.prismlauncher.PrismLauncher
        - net.pcsx2.PCSX2  
-       - org.DolphinEmu.dolphin-emu
-       - com.usebottles.bottles
-       - dev.vencord.Vesktop
        - org.libreoffice.LibreOffice
        - md.obsidian.Obsidian
        - io.github.giantpinkrobots.varia
@@ -117,6 +116,29 @@ modules:
        - runtime/org.kde.KStyle./x86_64/6.5 
        - runtime/org.kde.KStyle.Kvantum/x86_64/latest 
        - runtime/org.kde.PlatformTheme.QGnomePlatform/x86_64/6.6
+       - com.github.Matoking.protontricks
+       - com.usebottles.bottles
+       - com.vscodium.codium
+       - dev.vencord.Vesktop
+       - net.pcsx2.PCSX2
+       - org.DolphinEmu.dolphin-emu
+       - org.ferdium.Ferdium	
+       - org.freedesktop.LinuxAudio.Plugins.TA	
+       - org.freedesktop.LinuxAudio.Plugins.swh
+       - org.gtk.Gtk3theme.Adwaita-dark		
+       - org.gtk.Gtk3theme.Breeze
+       - org.kde.KStyle.Adwaita
+       - org.kde.KStyle.Adwaita	
+       - org.kde.Platform
+       - org.kde.Platform	
+       - org.kde.elisa
+       - org.kde.kdenlive
+       - org.mozilla.firefox
+       - org.nicotine_plus.Nicotine
+       - org.winehq.Wine.DLLs.dxvk
+       - org.winehq.Wine.gecko
+       - org.winehq.Wine.mono
+       
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

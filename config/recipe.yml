@@ -77,7 +77,8 @@ modules:
     - cava
     - fftw3
     - kvantum
-    
+    - cronie
+    - cronie-anacron
 
     remove:
       # example: removing firefox (in favor of the flatpak)

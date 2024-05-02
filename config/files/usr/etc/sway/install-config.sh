@@ -29,10 +29,13 @@ case $CHOICE in
             git -C ~/.local clone https://github.com/luizansounds/lu-dotfiles && sh ~/.local/lu-dotfiles/install-no-flatpak.sh
             ;;
 
-        3)  
+        3)
+            rm /etc/sway/config && cp /usr/etc/sway/config.ini /etc/sway/config
+
+        4)  
             systemctl reboot
             ;;
-        4)
+        5)
             systemctl poweroff
             ;;
 esac

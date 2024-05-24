@@ -93,6 +93,7 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
+      
        - org.gnome.Boxes
        - org.gnome.clocks
        - org.gnome.FontManager
@@ -122,6 +123,13 @@ modules:
        - net.pcsx2.PCSX2
        - org.DolphinEmu.dolphin-emu
        - org.ferdium.Ferdium	
+       - dev.alextren.Spot
+       - it.mijorus.gearlever
+       - org.gnome.FontManager
+       - org.gnome.World.Secrets
+       - com.rtosta.zapzap
+       - io.github.Sunderland93.sway-input-config
+       - io.github.kotatogram
        - org.freedesktop.LinuxAudio.Plugins.TA	
        - org.freedesktop.LinuxAudio.Plugins.swh
        - org.gtk.Gtk3theme.Adwaita-dark		

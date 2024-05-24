@@ -69,6 +69,7 @@ modules:
     - firewall-config
     - seahorse
     #- steam
+    - steam-devices
     - azote
     - nwg-look
     - ffmpeg
@@ -93,7 +94,7 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-      
+       - com.valvesoftware.Steam
        - org.gnome.Boxes
        - org.gnome.clocks
        - org.gnome.FontManager

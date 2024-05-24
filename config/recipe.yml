@@ -126,7 +126,7 @@ modules:
        - dev.alextren.Spot
        - it.mijorus.gearlever
        - org.gnome.FontManager
-       - org.gnome.World.Secrets
+       - org.keepassxc.KeePassXC
        - com.rtosta.zapzap
        - io.github.Sunderland93.sway-input-config
        - io.github.kotatogram

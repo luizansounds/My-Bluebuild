@@ -46,12 +46,12 @@ modules:
     - terminator
     - eza
 
-    - swayfx
-    - swaync
-    - rofi
-    - waybar
-    - network-manager-applet
-    - blueman
+    #- swayfx
+    #- swaync
+    #- rofi
+    #- waybar
+    #- network-manager-applet
+    #- blueman
     
     - neovim
     - pavucontrol
@@ -79,6 +79,8 @@ modules:
     - kvantum
     - cronie
     - cronie-anacron
+    - cmake
+    - virt-manager
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -145,6 +147,8 @@ modules:
        - org.winehq.Wine.DLLs.dxvk
        - org.winehq.Wine.gecko
        - org.winehq.Wine.mono
+       - org.nickvision.tagger
+       - org.libretro.RetroArch
        
         # - org.mozilla.firefox
         # - org.gnome.Loupe

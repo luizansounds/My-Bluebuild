@@ -69,8 +69,8 @@ modules:
     #- polkit-gnome
     #- firewall-config
     #- seahorse
-    - steam
-    #- steam-devices
+    #- steam
+    - steam-devices
     #- azote
     #- nwg-look
     - ffmpeg

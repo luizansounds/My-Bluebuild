@@ -4,7 +4,7 @@ name: my-bluebuild
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/aurora
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -62,27 +62,26 @@ modules:
     - nemo-fileroller
     - grim
     - slurp
-    - gscreenshot
+    #- gscreenshot
     - pamixer
     - playerctl
-    - polkit-gnome
-    - firewall-config
-    - seahorse
+    #- polkit-gnome
+    #- firewall-config
+    #- seahorse
     #- steam
     - steam-devices
-    - azote
-    - nwg-look
+    #- azote
+    #- nwg-look
     - ffmpeg
-    - gparted
+    #- gparted
+    - qtparted
     - cava
     - fftw3
-    - kvantum
+    #- kvantum
     - cronie
     - cronie-anacron
     - cmake
-    - virt-manager
-
-    - plasma-desktop
+    #- virt-manager
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -98,9 +97,9 @@ modules:
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
        - com.valvesoftware.Steam
-       - org.gnome.Boxes
+       #- org.gnome.Boxes
        - org.gnome.clocks
-       - org.gnome.FontManager
+       # - org.gnome.FontManager
        - org.fedoraproject.MediaWriter
        - com.github.tchx84.Flatseal
        - org.gustavoperedo.FontDownloader
@@ -111,8 +110,8 @@ modules:
        - org.prismlauncher.PrismLauncher
        - net.pcsx2.PCSX2  
        - org.libreoffice.LibreOffice
-       - md.obsidian.Obsidian
-       - io.github.giantpinkrobots.varia
+       # - md.obsidian.Obsidian
+       # - io.github.giantpinkrobots.varia
        - com.transmissionbt.Transmission
        - com.visualstudio.code
        - org.gtk.Gtk3theme.adw-gtk3 
@@ -126,13 +125,8 @@ modules:
        - dev.vencord.Vesktop
        - net.pcsx2.PCSX2
        - org.DolphinEmu.dolphin-emu
-       - org.ferdium.Ferdium	
+       # - org.ferdium.Ferdium	
        - dev.alextren.Spot
-       - it.mijorus.gearlever
-       - org.keepassxc.KeePassXC
-       - com.rtosta.zapzap
-       - io.github.Sunderland93.sway-input-config
-       - io.github.kotatogram
        - org.freedesktop.LinuxAudio.Plugins.TA	
        - org.freedesktop.LinuxAudio.Plugins.swh
        - org.gtk.Gtk3theme.Adwaita-dark		
@@ -141,7 +135,7 @@ modules:
        - org.kde.KStyle.Adwaita	
        - org.kde.Platform
        - org.kde.Platform	
-       - org.kde.elisa
+       # - org.kde.elisa
        - org.kde.kdenlive
        - org.mozilla.firefox
        - org.nicotine_plus.Nicotine
@@ -150,6 +144,10 @@ modules:
        - org.winehq.Wine.mono
        - org.nickvision.tagger
        - org.libretro.RetroArch
+       - it.mijorus.gearlever
+       - io.github.kotatogram
+       - com.rtosta.zapzap
+       - org.keepassxc.KeePassXC
        
         # - org.mozilla.firefox
         # - org.gnome.Loupe

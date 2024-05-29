@@ -74,7 +74,6 @@ modules:
     #- nwg-look
     - ffmpeg
     #- gparted
-    - qtparted
     - cava
     - fftw3
     #- kvantum

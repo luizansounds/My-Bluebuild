@@ -91,11 +91,9 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
-type: script
-snippets:
-  - "curl https://example.com/examplebinary > /usr/bin/examplebinary" # example: download binary
-  - "ln -sf /usr/bin/ld.bfd /etc/alternatives/ld && ln -sf /etc/alternatives/ld /usr/bin/ld" # example: ld alternatives symlink workaround
-scripts:
-  - myscript.sh # example: run config/scripts/myscript.sh
+- type: script
+      scripts:
+      - kernel.sh
+      - initramfs.sh
   
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+- type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -163,7 +163,7 @@ modules:
       
   - type: script
         scripts:
-          - initramfs.nu
-          - kernel.nu
+          - initramfs.sh
+          - kernel.sh
          
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

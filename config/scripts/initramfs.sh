@@ -1,4 +1,4 @@
-#!/usr/bin/env -S nu
+#!/usr/bin/env sh
 
 let KERNEL_SUFFIX = "" # SHOULD INCLUDE "-" AFTER!
 

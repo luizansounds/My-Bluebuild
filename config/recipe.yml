@@ -84,7 +84,6 @@ modules:
     #- virt-manager
     - yakuake
     #- kde-desktop
-    - nu
     
     remove:
       - firefox

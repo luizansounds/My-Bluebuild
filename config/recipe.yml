@@ -81,11 +81,10 @@ modules:
     - cronie
     - cronie-anacron
     - cmake
-    #- virt-manager
-    - yakuake
-    #- kde-desktop
+    - yakuake 
     
     remove:
       - firefox
+      - firefox-langpack
     
 - type: signing # this sets up the proper policy & signing files for signed images to work fully

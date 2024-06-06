@@ -20,12 +20,12 @@ modules:
     repos: 
     - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
-    #- https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/patrickl/yabridge/repo/fedora-%OS_VERSION%/patrickl-yabridge-fedora-%OS_VERSION%.
-    # - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/lchh/navidrome/repo/fedora-%OS_VERSION%/lchh-navidrome-fedora-%OS_VERSION%.repo
-    # - https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
-    # - https://copr.fedorainfracloud.org/coprs/tiritor/waybar/repo/fedora-%OS_VERSION%/tiritor-waybar-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
+    #- https://copr.fedorainfracloud.org/coprs/tiritor/waybar/repo/fedora-%OS_VERSION%/tiritor-waybar-fedora-%OS_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-40/ryanabx-cosmic-epoch-fedora-40.repo
 
     install:
@@ -91,6 +91,73 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+- type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      # repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+       - com.valvesoftware.Steam
+       #- org.gnome.Boxes
+       - org.gnome.clocks
+       # - org.gnome.FontManager
+       - org.fedoraproject.MediaWriter
+       - com.github.tchx84.Flatseal
+       - org.gustavoperedo.FontDownloader
+       - com.github.GradienceTeam.Gradience 
+       - io.mpv.Mpv
+       - org.rncbc.qpwgraph
+       - org.gimp.GIMP
+       - org.prismlauncher.PrismLauncher
+       - net.pcsx2.PCSX2  
+       - org.libreoffice.LibreOffice
+       # - md.obsidian.Obsidian
+       # - io.github.giantpinkrobots.varia
+       - com.transmissionbt.Transmission
+       - com.visualstudio.code
+       - org.gtk.Gtk3theme.adw-gtk3 
+       - org.gtk.Gtk3theme.adw-gtk3-dark  
+       - runtime/org.kde.KStyle./x86_64/6.5 
+       - runtime/org.kde.KStyle.Kvantum/x86_64/latest 
+       - runtime/org.kde.PlatformTheme.QGnomePlatform/x86_64/6.6
+       - com.github.Matoking.protontricks
+       - com.usebottles.bottles
+       - com.vscodium.codium
+       - dev.vencord.Vesktop
+       - net.pcsx2.PCSX2
+       - org.DolphinEmu.dolphin-emu
+       # - org.ferdium.Ferdium	
+       - dev.alextren.Spot
+       - org.freedesktop.LinuxAudio.Plugins.TA	
+       - org.freedesktop.LinuxAudio.Plugins.swh
+       - org.gtk.Gtk3theme.Adwaita-dark		
+       - org.gtk.Gtk3theme.Breeze
+       - org.kde.KStyle.Adwaita
+       - org.kde.KStyle.Adwaita	
+       - org.kde.Platform
+       - org.kde.Platform	
+       # - org.kde.elisa
+       - org.kde.kdenlive
+       - org.mozilla.firefox
+       - org.nicotine_plus.Nicotine
+       - org.winehq.Wine.DLLs.dxvk
+       - org.winehq.Wine.gecko
+       - org.winehq.Wine.mono
+       - org.nickvision.tagger
+       - org.libretro.RetroArch
+       - it.mijorus.gearlever
+       - io.github.kotatogram
+       - com.rtosta.zapzap
+       - org.keepassxc.KeePassXC
+       
+        # - org.mozilla.firefox
+        # - org.gnome.Loupe
+        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+        # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
 
-  
+      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
+      # Installing different branches of the same Flatpak is not supported.
+      
 - type: signing # this sets up the proper policy & signing files for signed images to work fully

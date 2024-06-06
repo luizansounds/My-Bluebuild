@@ -27,7 +27,6 @@ modules:
     #- https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
     #- https://copr.fedorainfracloud.org/coprs/tiritor/waybar/repo/fedora-%OS_VERSION%/tiritor-waybar-fedora-%OS_VERSION%.repo
     #- https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-40/ryanabx-cosmic-epoch-fedora-40.repo
-
     install:
     - starship
     - rust
@@ -39,21 +38,17 @@ modules:
     - tmux
     - dialog
     - pipewire
-    
     - unrar
     - p7zip 
     - p7zip-plugins
-    
     # - terminator
     - eza
-
     #- swayfx
     #- swaync
     #- rofi
     #- waybar
     #- network-manager-applet
     #- blueman
-    
     - neovim
     - pavucontrol
     - htop
@@ -82,7 +77,6 @@ modules:
     - cronie-anacron
     - cmake
     - yakuake 
-    
     remove:
       - firefox
       - firefox-langpack

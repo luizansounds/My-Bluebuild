@@ -26,8 +26,8 @@ modules:
           - https://copr.fedorainfracloud.org/coprs/lchh/navidrome/repo/fedora-%OS_VERSION%/lchh-navidrome-fedora-%OS_VERSION%.repo
     #- https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
     #- https://copr.fedorainfracloud.org/coprs/tiritor/waybar/repo/fedora-%OS_VERSION%/tiritor-waybar-fedora-%OS_VERSION%.repo
-          - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-40/ryanabx-cosmic-epoch-fedora-40.repo
-
+          - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
     install:
     - starship
     - rust

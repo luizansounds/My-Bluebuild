@@ -86,6 +86,7 @@ modules:
     - yabridge
     - easyeffects
     - virt-manager
+    - wine
     
     remove:
       # example: removing firefox (in favor of the flatpak)

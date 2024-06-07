@@ -83,7 +83,6 @@ modules:
     - cmake
     - yakuake 
     - nu
-    - yabridge
     - easyeffects
     - virt-manager
     - wine

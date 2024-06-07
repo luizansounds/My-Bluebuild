@@ -83,12 +83,14 @@ modules:
     - cmake
     - yakuake 
     - nu
+    - yabridge
+    - easyeffects 
     
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+    - firefox
+    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -118,9 +120,6 @@ modules:
        - com.visualstudio.code
        - org.gtk.Gtk3theme.adw-gtk3 
        - org.gtk.Gtk3theme.adw-gtk3-dark  
-       - runtime/org.kde.KStyle./x86_64/6.5 
-       - runtime/org.kde.KStyle.Kvantum/x86_64/latest 
-       - runtime/org.kde.PlatformTheme.QGnomePlatform/x86_64/6.6
        - com.github.Matoking.protontricks
        - com.usebottles.bottles
        - com.vscodium.codium
@@ -150,6 +149,8 @@ modules:
        - io.github.kotatogram
        - com.rtosta.zapzap
        - org.keepassxc.KeePassXC
+       - page.codeberg.JakobDev.jdDesktopEntryEdit
+       - io.podman_desktop.PodmanDesktop
        
         # - org.mozilla.firefox
         # - org.gnome.Loupe

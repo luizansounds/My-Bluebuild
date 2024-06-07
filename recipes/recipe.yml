@@ -82,6 +82,7 @@ modules:
     - cronie-anacron
     - cmake
     - yakuake 
+    - nu
     
     remove:
       # example: removing firefox (in favor of the flatpak)

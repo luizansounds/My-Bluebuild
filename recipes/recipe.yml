@@ -84,7 +84,8 @@ modules:
     - yakuake 
     - nu
     - yabridge
-    - easyeffects 
+    - easyeffects
+    - virt-manager
     
     remove:
       # example: removing firefox (in favor of the flatpak)

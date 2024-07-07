@@ -84,6 +84,7 @@ modules:
     - nu
     - easyeffects
     - virt-manager
+    - libayatana-appindicator-gtk3 
     
     remove:
       # example: removing firefox (in favor of the flatpak)

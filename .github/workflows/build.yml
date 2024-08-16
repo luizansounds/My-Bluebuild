@@ -22,7 +22,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
-          - recipe.yml
+          - recipe-plasma.yml
           - recipe-cosmic.yml
 
     steps:

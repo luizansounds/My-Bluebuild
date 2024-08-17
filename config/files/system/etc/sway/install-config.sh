@@ -9,8 +9,9 @@ MENU="Choose one of the following options:"
 
 OPTIONS=(1 "Install W/ Flatpak"
          2 "Install W/o Flatpak"
-         3 "Reboot"
-         4 "Shutdown")
+         3 "Default Config:wq"
+         4 "Reboot"
+         5 "Shutdown")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -30,7 +31,8 @@ case $CHOICE in
             ;;
 
         3)
-            rm /etc/sway/config && cp /usr/etc/sway/config.ini /etc/sway/config
+            sudo mv /etc/sway/config /etc/sway/config.firstboot.bak && sudo cp /etc/sway/config.ini /etc/sway/config
+            ;;
 
         4)  
             systemctl reboot

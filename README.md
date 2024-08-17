@@ -13,15 +13,32 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/luizansounds/my-bluebuild:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/luizansounds/blue-sounds-plasma:latest
   ```
+    
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/luizansounds/blue-sounds-cosmic:latest
+  ```
+
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/luizansounds/blue-sounds-swayfx:latest
+  ```
+
 - Reboot to complete the rebase:
   ```
   systemctl reboot
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luizansounds/my-bluebuild:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luizansounds/blue-sounds-plasma:latest
+  ```
+
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luizansounds/blue-sounds-cosmic:latest
+  ```
+
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luizansounds/blue-sounds-swayfx:latest
   ```
 - Reboot again to complete the installation
   ```

@@ -38,3 +38,4 @@ modules:
     - java-21-openjdk
     - mommy
     - zellij
+    - neovim

@@ -9,6 +9,8 @@ modules:
     - cargo    
     - python-pip
     - go
+    - npm
+    - pnpm
     - zsh
     - zsh-autosuggestions
     - tmux
@@ -39,3 +41,5 @@ modules:
     - mommy
     - zellij
     - neovim
+    - mpd
+    - elinks

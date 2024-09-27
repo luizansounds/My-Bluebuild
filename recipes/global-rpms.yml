@@ -42,4 +42,6 @@ modules:
     - zellij
     - neovim
     - mpd
+    - mpc
+    - moc
     - elinks

@@ -38,6 +38,7 @@ modules:
           
     install:
 
+    - file-roller
     - polkit-gnome
     - firewall-config
     - seahorse

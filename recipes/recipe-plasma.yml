@@ -11,6 +11,8 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 
 modules:
+  
+   - from-file: global-rpms.yml
   - type: files
     files:
       - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
@@ -34,66 +36,9 @@ modules:
       
           
     install:
-    - rust
-    - cargo    
-    - python-pip
-    - go
-    - zsh
-    - zsh-autosuggestions
-    - tmux
-    - dialog
-    - pipewire
-    
-    - unrar
-    - p7zip 
-    - p7zip-plugins
-    
-    # - terminator
-    - eza
-
-    #- swayfx
-    #- swaync
-    #- rofi
-    #- waybar
-    #- network-manager-applet
-    #- blueman
-    
-    - neovim
-    - pavucontrol
-    - htop
-    - mc
-    - fastfetch
-    #- nemo
-    #- nemo-fileroller
-    - grim
-    - slurp
-    #- gscreenshot
-    - pamixer
-    - playerctl
-    #- polkit-gnome
-    #- firewall-config
-    #- seahorse
-    #- steam
-    - steam-devices
-    #- azote
-    #- nwg-look
-    - ffmpeg
-    #- gparted
-    - cava
-    - fftw3
-    #- kvantum
-    - cronie
-    - cronie-anacron
-    - cmake
     - yakuake 
-    - nu
-    - easyeffects
-    - virt-manager
-    - libayatana-appindicator-gtk3 
-    - java-21-openjdk
-    - mommy
-    - zellij
     - transmission
+    
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency

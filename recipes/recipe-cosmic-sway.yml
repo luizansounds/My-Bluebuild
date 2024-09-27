@@ -1,0 +1,109 @@
+      # image will be published to ghcr.io/<user>/<name>
+name: blue-sounds-swayfx
+# description will be included in the image's metadata
+description: This is my personal OS image.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/cosmic
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: global-rpms.yml
+  
+  - type: files
+    files:
+      - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /
+  
+  - type: rpm-ostree
+    repos:
+          - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/patrickl/yabridge/repo/fedora-%OS_VERSION%/patrickl-yabridge-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/lchh/navidrome/repo/fedora-%OS_VERSION%/lchh-navidrome-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/thenaterhood/gscreenshot/repo/fedora-%OS_VERSION%/thenaterhood-gscreenshot-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/tiritor/waybar/repo/fedora-%OS_VERSION%/tiritor-waybar-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
+      
+          
+    install:
+    - terminator
+    - tilix
+    - swayfx
+    - swaync
+    - rofi
+    - waybar
+    - network-manager-applet
+    - blueman
+    - nemo
+    - nemo-fileroller
+    - grim
+    - slurp
+    - gscreenshot
+    - polkit-gnome
+    - firewall-config
+    - seahorse
+    #- steam
+    #- azote
+    - nwg-look
+    - gparted
+    - kvantum
+    - easyeffects
+    - virt-manager
+    - cosmic-greeter
+    
+    remove:
+      # example: removing firefox (in favor of the flatpak)
+      # "firefox" is the main package, "firefox-langpacks" is a dependency
+    - firefox
+    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      # repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:       
+
+       
+        # - org.mozilla.firefox
+        # - org.gnome.Loupe
+        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+        # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
+      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
+      # Installing different branches of the same Flatpak is not supported. in this example).
+      # Installing different branches of the same Flatpak is not supported.
+      remove:
+      # - org.gnome.eog
+      
+  - type: brew
+    # Auto-update Brew binary
+    auto-update: true # Optional - Default: true - Expects type: boolean
+    # Interval between Brew updates
+    update-interval: '6h' # Optional - Default: '6h' - Expects type: string
+    # Time delay after boot before first Brew update
+    update-wait-after-boot: '10min' # Optional - Default: '10min' - Expects type: string
+    # Auto-upgrade Brew packages
+    auto-upgrade: true # Optional - Default: true - Expects type: boolean
+    # Interval between Brew package upgrades
+    upgrade-interval: '8h' # Optional - Default: '8h' - Expects type: string
+    # Time delay after boot before first Brew upgrade
+    upgrade-wait-after-boot: '30min' # Optional - Default: '30min' - Expects type: string
+    # Apply nofile limits for Brew installations
+    nofile-limits: false # Optional - Default: false - Expects type: boolean 
+    # Control Brew analytics
+    brew-analytics: true # Optional - Default: true - Expects type: boolean
+  
+  - type: script
+    scripts:
+        #- kernel.nu
+        #- initramfs.nu
+        
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -44,4 +44,6 @@ modules:
     - mpd
     - mpc
     - moc
+    - ncmpcpp
+    - mpdscribble
     - elinks

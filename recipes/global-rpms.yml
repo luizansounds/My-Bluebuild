@@ -42,15 +42,15 @@ modules:
     - mommy
     - zellij
     - neovim
-    - mpd
+    #- mpd
     - mpc
     - ncmpcpp
     - mpdscribble
     - elinks
-    - winehq-staging
+    #- winehq-staging
 
   - type: script
     scripts:
-        - kernel.nu
-        - initramfs.nu
+        #- kernel.nu
+        #- initramfs.nu
 

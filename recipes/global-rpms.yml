@@ -47,7 +47,7 @@ modules:
     - ncmpcpp
     - mpdscribble
     - elinks
-    - winehq-staging
+    #- winehq-staging
 
   - type: script
     scripts:

@@ -50,3 +50,8 @@ modules:
     - elinks
     - wine-staging
 
+  - type: script
+    scripts:
+        #- kernel.nu
+        #- initramfs.nu
+

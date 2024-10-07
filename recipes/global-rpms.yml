@@ -44,11 +44,10 @@ modules:
     - neovim
     - mpd
     - mpc
-    - moc
     - ncmpcpp
     - mpdscribble
     - elinks
-    - wine-staging
+    - winehq-staging
 
   - type: script
     scripts:

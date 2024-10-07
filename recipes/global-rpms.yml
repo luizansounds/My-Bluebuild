@@ -42,7 +42,7 @@ modules:
     - mommy
     - zellij
     - neovim
-    #- mpd
+    - mpd
     - mpc
     - ncmpcpp
     - mpdscribble

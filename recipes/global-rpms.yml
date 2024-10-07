@@ -52,6 +52,6 @@ modules:
 
   - type: script
     scripts:
-        #- kernel.nu
-        #- initramfs.nu
+        - kernel.nu
+        - initramfs.nu
 

@@ -52,6 +52,7 @@ modules:
 
   - type: script
     scripts:
+      - fusion.sh
         #- kernel.nu
         #- initramfs.nu
 

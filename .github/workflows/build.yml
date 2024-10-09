@@ -25,7 +25,7 @@ jobs:
           - recipe-plasma.yml
           - recipe-cosmic.yml
           - recipe-sway.yml
-          - recipe-cosmic-sway.yml
+          #- recipe-cosmic-sway.yml
 
     steps:
        # the build is fully handled by the reusable github action

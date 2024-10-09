@@ -1,4 +1,11 @@
 modules:
+
+  - type: script
+    scripts:
+      - fusion.sh
+        #- kernel.nu
+        #- initramfs.nu
+
   - type: rpm-ostree
     repos:
           - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
@@ -43,16 +50,11 @@ modules:
     - mommy
     - zellij
     - neovim
-    #- mpd
+    - mpd
     - mpc
     - ncmpcpp
     - mpdscribble
     - elinks
-    #- winehq-staging
+    - winehq-staging
 
-  - type: script
-    scripts:
-      - fusion.sh
-        #- kernel.nu
-        #- initramfs.nu
 

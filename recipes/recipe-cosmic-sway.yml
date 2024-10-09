@@ -100,10 +100,5 @@ modules:
     nofile-limits: false # Optional - Default: false - Expects type: boolean 
     # Control Brew analytics
     brew-analytics: true # Optional - Default: true - Expects type: boolean
-  
-  - type: script
-    scripts:
-        #- kernel.nu
-        #- initramfs.nu
         
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

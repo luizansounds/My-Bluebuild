@@ -47,9 +47,31 @@ modules:
       # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-      install:       
-
-       
+      install:         
+      - terminator
+      - tilix
+      - swayfx
+      - swaync
+      - rofi
+      - waybar
+      - network-manager-applet
+      - blueman
+      - nemo
+      - nemo-fileroller
+      - grim
+      - slurp
+      - gscreenshot
+      - gnome-keyring
+      - NetworkManager-tui
+      - NetworkManager-openvpn
+      - polkit-gnome
+      - firewall-config
+      - seahorse
+      - nwg-look
+      - gparted
+      - kvantum
+      - easyeffects
+      - virt-manager
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

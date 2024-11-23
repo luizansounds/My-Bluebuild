@@ -32,34 +32,7 @@ modules:
       
           
     install:
-    - terminator
-    - tilix
-    - swayfx
-    - swaync
-    - rofi
-    - waybar
-    - network-manager-applet
-    - blueman
-    - nemo
-    - nemo-fileroller
-    - grim
-    - slurp
-    - gscreenshot
-    - gnome-keyring
-    - NetworkManager-tui
-    - NetworkManager-openvpn
-    - polkit-gnome
-    - firewall-config
-    - seahorse
-    #- steam
-    #- azote
-    - nwg-look
-    - gparted
-    - kvantum
-    - easyeffects
-    - virt-manager
-    - cosmic-epoch
-    - power-profiles-daemon
+
     
     remove:
       # example: removing firefox (in favor of the flatpak)

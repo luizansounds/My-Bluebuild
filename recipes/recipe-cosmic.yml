@@ -27,7 +27,7 @@ modules:
     install:
 
     - file-roller
-    - polkit-gnome
+    - mate-polkit
     - firewall-config
     - seahorse
     - gparted

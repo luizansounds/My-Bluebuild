@@ -52,28 +52,6 @@ modules:
        repo-name: flathub
        repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:       
-       - org.mozilla.Thunderbird
-       - org.gtk.Gtk3theme.adw-gtk3-dark 
-       - it.mijorus.gearlever 
-       - io.github.zen_browser.zen 
-       - io.github.lime3ds.Lime3DS
-       - io.github.kotatogram
-       - dog.unix.cantata.Cantata
-       - dev.vencord.Vesktop
-       - com.usebottles.bottles
-       - com.github.tchx84.Flatseal
-       - net.pcsx2.PCSX2
-       - org.DolphinEmu.dolphin-emu
-       - org.prismlauncher.PrismLauncher
-       - io.github.fabiangreffrath.Doom
-       - org.gimp.GIMP
-       - org.soundconverter.SoundConverter
-       - org.kde.kdenlive
-       - org.ferdium.Ferdium
-       - org.nicotine_plus.Nicotine
-       - org.nickvision.tagger
-       - com.github.Flacon
-              
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

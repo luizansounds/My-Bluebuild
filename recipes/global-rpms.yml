@@ -61,5 +61,5 @@ modules:
     - mpdscribble
     - elinks
     - winehq-staging
-
+    - igt-gpu-tools
 

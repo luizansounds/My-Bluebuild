@@ -37,14 +37,3 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
 
-      - name: Build ISO
-        uses: jasonn3/build-container-installer@main
-        id: build
-        with:
-          arch: ${{ env.ARCH}}
-          image_name: ${{ env.IMAGE_NAME}}
-          image_repo: ${{ env.IMAGE_REPO}}
-          image_tag: ${{ env.IMAGE_TAG }}
-          version: ${{ env.VERSION }}
-          variant: ${{ env.VARIANT }}
-          iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}-${{ env.VERSION }}.iso

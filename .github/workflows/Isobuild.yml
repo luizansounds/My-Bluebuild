@@ -35,5 +35,5 @@ jobs:
     image_repo: ghcr.io/luizansounds/blue-sounds-cosmic
     image_tag: latest
     version: 31
-    variant: ${{ env.VARIANT}
+    variant: fedora-release-kinoite-41-29.noarch
     iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}-${{ env.VERSION }}.iso

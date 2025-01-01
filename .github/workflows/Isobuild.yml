@@ -1,11 +1,11 @@
-    name: Build ISO
-        uses: jasonn3/build-container-installer@main
-        id: build
-        with:
-            arch: x86_64
-            image_name: MyBuildBlue  
-            image_repo: ghcr.io/luizansounds/blue-sounds-cosmic
-            image_tag: latest
-            version: 41
-            variant: fedora-release-kinoite-41-29.noarch
-            iso_name: mybuildblue.iso
+- name: Build ISO
+  uses: jasonn3/build-container-installer@main
+  id: build
+  with:
+    arch: ${{ env.ARCH}}
+    image_name: ${{ env.IMAGE_NAME}}
+    image_repo: ${{ env.IMAGE_REPO}}
+    image_tag: ${{ env.IMAGE_TAG }}
+    version: ${{ env.VERSION }}
+    variant: ${{ env.VARIANT }}
+    iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}-${{ env.VERSION }}.iso

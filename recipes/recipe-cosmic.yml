@@ -5,7 +5,7 @@ name: blue-sounds-cosmic
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/cosmic-silverblue
+base-image: ghcr.io/ublue-os/cosmic
 
 image-version: 41 # latest is also supported if you want new updates ASAP
 
@@ -25,7 +25,9 @@ modules:
     - https://copr.fedorainfracloud.org/coprs/wiiznokes/cosmic-applets-unofficial/repo/fedora-%OS_VERSION%/wiiznokes-cosmic-applets-unofficial-fedora-%OS_VERSION%.repo
        
     install:
-
+    - nemo
+    - nemo-fileroller
+    
     - file-roller
     - mate-polkit
     - firewall-config
@@ -41,6 +43,10 @@ modules:
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
+    - cosmic-files
+    - cosmic-edit 
+    - cosmic-media-player
+    - cosmic-store
     - firefox
     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 

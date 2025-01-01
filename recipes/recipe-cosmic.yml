@@ -27,7 +27,7 @@ modules:
     install:
     - nemo
     - nemo-fileroller
-    
+    - mpd
     - file-roller
     - mate-polkit
     - firewall-config
@@ -45,7 +45,7 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
     - cosmic-files
     - cosmic-edit 
-    - cosmic-media-player
+    - cosmic-player
     - cosmic-store
     - firefox
     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)

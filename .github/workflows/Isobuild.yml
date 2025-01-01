@@ -24,14 +24,14 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-- name: Build ISO
-  uses: jasonn3/build-container-installer@main
-  id: build
-  with:
-    arch: x86_64
-    image_name: MyBuildBlue  
-    image_repo: ghcr.io/luizansounds/blue-sounds-cosmic
-    image_tag: latest
-    version: 41
-    variant: fedora-release-kinoite-41-29.noarch
-    iso_name: mybuildblue.iso
+    name: Build ISO
+        uses: jasonn3/build-container-installer@main
+        id: build
+        with:
+            arch: x86_64
+            image_name: MyBuildBlue  
+            image_repo: ghcr.io/luizansounds/blue-sounds-cosmic
+            image_tag: latest
+            version: 41
+            variant: fedora-release-kinoite-41-29.noarch
+            iso_name: mybuildblue.iso

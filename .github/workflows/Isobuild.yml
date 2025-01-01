@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Isobuild
 
 # Controls when the workflow will run
 on:
@@ -34,6 +34,6 @@ jobs:
     image_name: MyBuildBlue  
     image_repo: ghcr.io/luizansounds/blue-sounds-cosmic
     image_tag: latest
-    version: 31
+    version: 41
     variant: fedora-release-kinoite-41-29.noarch
-    iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}-${{ env.VERSION }}.iso
+    iso_name: mybuildblue.iso

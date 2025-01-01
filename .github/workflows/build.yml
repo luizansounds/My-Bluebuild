@@ -36,4 +36,14 @@ jobs:
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
-
+      - name: Build ISO
+        uses: jasonn3/build-container-installer@main
+        id: build
+        with:
+            arch: x86_64
+            image_name: MyBuildBlue
+            image_repo: ghcr.io/luizansounds/blue-sounds-cosmic
+            image_tag: latest
+            version: 41
+            variant: fedora-release-kinoite-41-29.noarch
+            iso_name: mybuildblue.iso

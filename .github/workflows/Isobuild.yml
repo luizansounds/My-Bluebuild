@@ -23,7 +23,7 @@ jobs:
     - name: Build ISO
       uses: jasonn3/build-container-installer@main
       id: build
-          with:
+      with:
           arch: ${{ env.ARCH}}
           image_name: ${{ env.IMAGE_NAME}}
           image_repo: ${{ env.IMAGE_REPO}}

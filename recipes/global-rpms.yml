@@ -27,6 +27,7 @@ modules:
     - pnpm
     - zsh
     - zsh-autosuggestions
+    - zsh-syntax-highlighting 
     - tmux
     - dialog
     - pipewire    

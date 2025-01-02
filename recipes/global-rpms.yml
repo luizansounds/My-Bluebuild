@@ -63,4 +63,6 @@ modules:
     - elinks
     - winehq-staging
     - igt-gpu-tools
+    - dex-autostart
+    
 

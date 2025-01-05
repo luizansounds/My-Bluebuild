@@ -65,6 +65,6 @@ modules:
     - ncmpcpp
     - mpdscribble
     - elinks
-    - winehq-staging
+    #- winehq-staging
     #- igt-gpu-tools
     #- dex-autostart

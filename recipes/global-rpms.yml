@@ -2,10 +2,14 @@ modules:
 
   - type: script
     scripts:
-      - fusion.sh
+        # - fusion.sh
         #- kernel.nu
         #- initramfs.nu
-
+        
+  - type: bling
+    install:
+         - rpmfusion
+         
   - type: rpm-ostree
     repos:
           # - https://copr.fedorainfracloud.org/coprs/patrickl/yabridge/repo/fedora-%OS_VERSION%/patrickl-yabridge-fedora-%OS_VERSION%.repo

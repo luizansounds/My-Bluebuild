@@ -66,5 +66,5 @@ modules:
     - mpdscribble
     - elinks
     - winehq-staging
-    - igt-gpu-tools
-    - dex-autostart
+    #- igt-gpu-tools
+    #- dex-autostart

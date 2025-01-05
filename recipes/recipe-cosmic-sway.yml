@@ -45,7 +45,7 @@ modules:
     - grim
     - slurp
     - gscreenshot
-    - polkit-gnome
+    - mate-polkit
     - firewall-config
     - seahorse
     #- steam

@@ -55,6 +55,7 @@ modules:
     - kvantum
     - easyeffects
     - virt-manager
+    - dex-autostart
     # - cosmic-greeter
     
     remove:

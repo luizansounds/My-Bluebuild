@@ -8,7 +8,7 @@ description: This is my personal OS image .
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 40 # latest is also supported if you want new updates ASAP
+image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -71,10 +71,5 @@ modules:
     nofile-limits: false # Optional - Default: false - Expects type: boolean 
     # Control Brew analytics
     brew-analytics: true # Optional - Default: true - Expects type: boolean
-  
-  - type: script
-    scripts:
-        #- kernel.nu
-        #- initramfs.nu
-        
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

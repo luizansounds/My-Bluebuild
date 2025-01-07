@@ -22,18 +22,15 @@ modules:
         destination: /
 
   - type: rpm-ostree
-    repos:    
-          
     install:
-    - yakuake 
-    - transmission
-    
+      - yakuake 
+      - transmission
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-    - firefox
-    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+  
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

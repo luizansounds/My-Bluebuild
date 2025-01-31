@@ -68,3 +68,4 @@ modules:
     - mympd
     - yabridge
     - realtime-setup
+    - lutris

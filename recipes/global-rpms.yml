@@ -62,8 +62,8 @@ modules:
     #- ncmpcpp
     #- mpdscribble
     #- elinks
-    #- winehq-staging
-    - wine
+    - winehq-staging
+    #- wine
     #- igt-gpu-tools
     #- dex-autostart
     #- mympd

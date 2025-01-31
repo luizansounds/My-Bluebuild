@@ -67,3 +67,4 @@ modules:
     - dex-autostart
     - mympd
     - yabridge
+    - realtime-setup

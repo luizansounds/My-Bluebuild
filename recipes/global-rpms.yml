@@ -20,7 +20,6 @@ modules:
           - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
       
     install:
-    - 
     - rust
     - cargo    
     - python-pip

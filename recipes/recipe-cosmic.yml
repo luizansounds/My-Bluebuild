@@ -29,7 +29,6 @@ modules:
     install:
     - nemo
     - nemo-fileroller
-    - mpd
     - file-roller
     - mate-polkit
     - firewall-config

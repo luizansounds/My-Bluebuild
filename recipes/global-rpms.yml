@@ -20,6 +20,7 @@ modules:
           - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
       
     install:
+    - 
     - rust
     - cargo    
     - python-pip
@@ -62,7 +63,7 @@ modules:
     - ncmpcpp
     - mpdscribble
     - elinks
-    - winehq-staging
+    - wine
     #- igt-gpu-tools
     - dex-autostart
     #- mympd

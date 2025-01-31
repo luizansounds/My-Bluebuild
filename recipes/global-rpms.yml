@@ -49,6 +49,8 @@ modules:
     - cronie
     - cronie-anacron
     - cmake 
+    - meson
+    - ninja-build
     - nu
     - easyeffects
     - virt-manager

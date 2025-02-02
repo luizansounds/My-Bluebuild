@@ -17,7 +17,7 @@ modules:
           - https://dl.winehq.org/wine-builds/fedora/%OS_VERSION%/winehq.repo
           - https://copr.fedorainfracloud.org/coprs/ycollet/audinux/repo/fedora-%OS_VERSION%/ycollet-audinux-fedora-%OS_VERSION%.repo
           - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
-          - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-_%OS_VERSION%/hazel-bunny-ricing-fedora-%OS_VERSION%.repo
+          - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-41/hazel-bunny-ricing-fedora-41.repo
       
     install:
     - rust

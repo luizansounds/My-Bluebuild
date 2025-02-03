@@ -71,3 +71,6 @@ modules:
     - yabridge
     - realtime-setup
     - lutris
+    - bluez-tools
+    - bluez-deprecated
+    

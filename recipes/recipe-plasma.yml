@@ -24,7 +24,7 @@ modules:
   - type: rpm-ostree
     install:
       - yakuake 
-      - transmission
+      - transmission-qt
       - klassy
     remove:
       # example: removing firefox (in favor of the flatpak)

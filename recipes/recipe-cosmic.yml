@@ -19,7 +19,7 @@ modules:
   
   - type: files
     files:
-      - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+      - source: local   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
 
   - type: rpm-ostree

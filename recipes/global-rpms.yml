@@ -64,11 +64,11 @@ modules:
     - ncmpcpp
     - mpdscribble
     - elinks
-    - wine-devel
+    - wine
     - igt-gpu-tools
     - dex-autostart
     - mympd
-    - yabridge
+    #- yabridge
     - realtime-setup
     - bluez-tools
     - bluez-deprecated

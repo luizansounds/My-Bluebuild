@@ -30,7 +30,7 @@ modules:
           #- https://copr.fedorainfracloud.org/coprs/patrickl/mingw-wine-gecko/repo/fedora-41/patrickl-mingw-wine-gecko-fedora-41.repo
           - https://copr.fedorainfracloud.org/coprs/patrickl/pipewire-wineasio/repo/fedora-41/patrickl-pipewire-wineasio-fedora-41.repo
           - https://copr.fedorainfracloud.org/coprs/patrickl/libcurl-gnutls/repo/fedora-41/patrickl-libcurl-gnutls-fedora-41.repo
-          
+        
     install:
     - rust
     - cargo    
@@ -94,4 +94,4 @@ modules:
     - wine-dxvk
     - winetricks
     - yabridge
-    - libcurl-gnutils
+    - libcurl-gnutls

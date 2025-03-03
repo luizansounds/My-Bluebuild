@@ -16,10 +16,10 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 modules:
   - from-file: global-rpms.yml
   
-  - type: files
-    files:
-      - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-        destination: /
+  #- type: files
+    #files:
+      #- source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        #destination: /
 
   - type: rpm-ostree
     install:

@@ -76,12 +76,11 @@ modules:
     - ncmpcpp
     - mpdscribble
     - elinks
-    - wine
     - igt-gpu-tools
     - dex-autostart
     - mympd
     - wine
-
+    - transmission-daemon
     - realtime-setup
     - bluez-tools
     - bluez-deprecated

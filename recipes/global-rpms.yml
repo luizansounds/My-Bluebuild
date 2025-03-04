@@ -87,7 +87,7 @@ modules:
     - bluez-deprecated
     - android-tools
 
-    - yabridge
+    #- yabridge
     #- wine-tkg
     #- wine-mono
     #- mingw-wine-gecko

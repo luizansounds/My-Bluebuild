@@ -80,6 +80,7 @@ modules:
     - igt-gpu-tools
     - dex-autostart
     - mympd
+    - wine
 
     - realtime-setup
     - bluez-tools
@@ -87,11 +88,10 @@ modules:
     - android-tools
 
     - yabridge
-    - wine-tkg
-    - wine-mono
+    #- wine-tkg
+    #- wine-mono
     #- mingw-wine-gecko
-    - vkd3d
-    - wine-dxvk
-    - winetricks
-    - yabridge
+    #- vkd3d
+    #- wine-dxvk
+    #- winetricks
     - libcurl-gnutls

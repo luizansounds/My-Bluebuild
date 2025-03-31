@@ -89,11 +89,11 @@ modules:
     - bluez-deprecated
     - android-tools
 
-    #- yabridge
-    #- wine-tkg
-    #- wine-mono
-    #- mingw-wine-gecko
-    #- vkd3d
-    #- wine-dxvk
-    #- winetricks
+    - yabridge
+    - wine-tkg
+    - wine-mono
+    - mingw-wine-gecko
+    - vkd3d
+    - wine-dxvk
+    - winetricks
     - libcurl-gnutls

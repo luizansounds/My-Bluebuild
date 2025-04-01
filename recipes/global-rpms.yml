@@ -5,9 +5,9 @@ modules:
     files:
       - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
-  #- type: bling
-    #install:
-         #- rpmfusion
+  - type: bling
+    install:
+         - rpmfusion
          
   - type: rpm-ostree
     repos:
@@ -72,7 +72,7 @@ modules:
     - mommy
     - zellij
     - neovim
-    #- mpd
+    - mpd
     - mpc
     - ncmpcpp
     - mpdscribble
@@ -86,13 +86,13 @@ modules:
     - bluez-tools
     - bluez-deprecated
     - android-tools
-    - winehq-staging
+    #- winehq-staging
 
     #- yabridge
-    #- wine-tkg
-    #- wine-mono
-    #- mingw-wine-gecko
-    #- vkd3d
-    #- wine-dxvk
+    - wine-tkg
+    - wine-mono
+    - mingw-wine-gecko
+    - vkd3d
+    - wine-dxvk
     #- winetricks
     - libcurl-gnutls

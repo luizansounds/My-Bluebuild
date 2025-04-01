@@ -28,7 +28,6 @@ modules:
     cleanup: true
     copr:
     - hazel-bunny/ricing
-
     install:
     allow-erasing: true
     install-weak-deps: false

@@ -80,7 +80,7 @@ modules:
     - igt-gpu-tools
     - dex-autostart
     - mympd
-    - wine
+    #- wine
     - transmission-daemon
     - realtime-setup
     - bluez-tools

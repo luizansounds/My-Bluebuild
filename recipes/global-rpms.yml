@@ -80,12 +80,9 @@ modules:
     - android-tools
     #- winehq-staging
     
-    - wine.x86_64 
-    - wine.i686 
+    - wine
     - wine-mono 
-    - mingw32-wine-gecko 
-    - mingw64-wine-gecko 
-    - wine-dxvk 
-    - winetricks 
+    - wine-dxvk
+    - vkd3d
     - yabridge 
     - libcurl-gnutls 

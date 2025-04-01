@@ -22,16 +22,16 @@ modules:
           - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
           - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-41/hazel-bunny-ricing-fedora-41.repo
           
-          - https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg/repo/fedora-41/patrickl-wine-tkg-fedora-41.repo
-          - https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg/repo/fedora-41/patrickl-wine-tkg-fedora-41.repo?arch=x86_64
-          - https://copr.fedorainfracloud.org/coprs/patrickl/wine-mono/repo/fedora-41/patrickl-wine-mono-fedora-41.repo
-          - https://copr.fedorainfracloud.org/coprs/patrickl/wine-dxvk/repo/fedora-41/patrickl-wine-dxvk-fedora-41.repo
-          - https://copr.fedorainfracloud.org/coprs/patrickl/wine-dxvk/repo/fedora-41/patrickl-wine-dxvk-fedora-41.repo?arch=x86_64
-          - https://copr.fedorainfracloud.org/coprs/patrickl/vkd3d/repo/fedora-41/patrickl-vkd3d-fedora-41.repo
-          - https://copr.fedorainfracloud.org/coprs/patrickl/vkd3d/repo/fedora-41/patrickl-vkd3d-fedora-41.repo?arch=x86_64
-          - https://copr.fedorainfracloud.org/coprs/patrickl/winetricks/repo/fedora-41/patrickl-winetricks-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg/repo/fedora-41/patrickl-wine-tkg-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg/repo/fedora-41/patrickl-wine-tkg-fedora-41.repo?arch=x86_64
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/wine-mono/repo/fedora-41/patrickl-wine-mono-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/wine-dxvk/repo/fedora-41/patrickl-wine-dxvk-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/wine-dxvk/repo/fedora-41/patrickl-wine-dxvk-fedora-41.repo?arch=x86_64
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/vkd3d/repo/fedora-41/patrickl-vkd3d-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/vkd3d/repo/fedora-41/patrickl-vkd3d-fedora-41.repo?arch=x86_64
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/winetricks/repo/fedora-41/patrickl-winetricks-fedora-41.repo
           #- https://copr.fedorainfracloud.org/coprs/patrickl/mingw-wine-gecko/repo/fedora-41/patrickl-mingw-wine-gecko-fedora-41.repo
-          - https://copr.fedorainfracloud.org/coprs/patrickl/pipewire-wineasio/repo/fedora-41/patrickl-pipewire-wineasio-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/pipewire-wineasio/repo/fedora-41/patrickl-pipewire-wineasio-fedora-41.repo
           - https://copr.fedorainfracloud.org/coprs/patrickl/libcurl-gnutls/repo/fedora-41/patrickl-libcurl-gnutls-fedora-41.repo
         
     install:

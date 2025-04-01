@@ -80,7 +80,7 @@ modules:
     - android-tools
     #- winehq-staging
 
-    - wine-9.21-13.wine_tkg.fc41.i686
+    - wine-9.21-13.wine_tkg.fc41
     #- wine-mono 
     #- wine-dxvk
     #- yabridge 

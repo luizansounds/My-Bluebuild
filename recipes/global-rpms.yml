@@ -28,7 +28,7 @@ modules:
           - https://copr.fedorainfracloud.org/coprs/patrickl/vkd3d/repo/fedora-41/patrickl-vkd3d-fedora-41.repo
           - https://copr.fedorainfracloud.org/coprs/patrickl/vkd3d/repo/fedora-41/patrickl-vkd3d-fedora-41.repo?arch=x86_64
           - https://copr.fedorainfracloud.org/coprs/patrickl/winetricks/repo/fedora-41/patrickl-winetricks-fedora-41.repo
-          - https://copr.fedorainfracloud.org/coprs/patrickl/mingw-wine-gecko/repo/fedora-41/patrickl-mingw-wine-gecko-fedora-41.repo
+          #- https://copr.fedorainfracloud.org/coprs/patrickl/mingw-wine-gecko/repo/fedora-41/patrickl-mingw-wine-gecko-fedora-41.repo
           - https://copr.fedorainfracloud.org/coprs/patrickl/pipewire-wineasio/repo/fedora-41/patrickl-pipewire-wineasio-fedora-41.repo
           - https://copr.fedorainfracloud.org/coprs/patrickl/libcurl-gnutls/repo/fedora-41/patrickl-libcurl-gnutls-fedora-41.repo
         

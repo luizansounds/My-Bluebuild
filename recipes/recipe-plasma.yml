@@ -21,15 +21,32 @@ modules:
       #- source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         #destination: /
 
+        #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
+  - type: dnf
+    source: ghcr.io/blue-build/modules/dnf:dnf-module
+    repos:
+    cleanup: true
+    copr:
+    - hazel-bunny/ricing
+
+    install:
+    allow-erasing: true
+    install-weak-deps: false
+    packages:
+    - klassy
+
   - type: rpm-ostree
     install:
       - yakuake 
       - transmission-qt
+
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox-langpacks
+      #- mesa-dri-drivers-25.0.2-2.fc41.x86_64
+       # also remove firefox dependency (not required for all packages, this is a special case)
   
   - type: brew
     # Auto-update Brew binary

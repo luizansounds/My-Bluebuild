@@ -14,38 +14,37 @@ modules:
   - type: dnf
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
-    cleanup: true
-    copr:
-    - patrickl/wine-tkg
-    - patrickl/wine-mono
-   #- patrickl/mingw-wine-gecko
-    - patrickl/vkd3d
-    - patrickl/wine-dxvk
-    - patrickl/winetricks
-    - patrickl/yabridge
-    - patrickl/libcurl-gnutls
-    
+     cleanup: true
+     copr:
+         - patrickl/wine-tkg
+         - patrickl/wine-mono
+        #- patrickl/mingw-wine-gecko
+         - patrickl/vkd3d
+         - patrickl/wine-dxvk
+         - patrickl/winetricks
+         - patrickl/yabridge
+         - patrickl/libcurl-gnutls
     install:
-    allow-erasing: true
-    install-weak-deps: false
-    packages:
-    - wine.x86_64
-    - wine.i686
-    - wine-mono
-    - mingw32-wine-gecko
-    - mingw64-wine-gecko
-    - wine-dxvk
-    - winetricks
-    - yabridge
-    - libcurl-gnutls
+     allow-erasing: true
+     install-weak-deps: false
+     packages:
+         - wine.x86_64
+         - wine.i686
+         - wine-mono
+         - mingw32-wine-gecko
+         - mingw64-wine-gecko
+         - wine-dxvk
+         - winetricks
+         - yabridge
+         - libcurl-gnutls
 
   - type: rpm-ostree
-    repos:
-    - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
-    - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
-    - https://copr.fedorainfracloud.org/coprs/fwdekker/mommy/repo/fedora-%OS_VERSION%/fwdekker-mommy-fedora-%OS_VERSION%.repo
-    - https://copr.fedorainfracloud.org/coprs/ycollet/audinux/repo/fedora-%OS_VERSION%/ycollet-audinux-fedora-%OS_VERSION%.repo
-    - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
+     repos:
+         - https://copr.fedorainfracloud.org/coprs/szpadel/spotifyd/repo/fedora-%OS_VERSION%/szpadel-spotifyd-fedora-%OS_VERSION%.repo
+         - https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-%OS_VERSION%/varlad-zellij-fedora-%OS_VERSION%.repo
+         - https://copr.fedorainfracloud.org/coprs/fwdekker/mommy/repo/fedora-%OS_VERSION%/fwdekker-mommy-fedora-%OS_VERSION%.repo
+         - https://copr.fedorainfracloud.org/coprs/ycollet/audinux/repo/fedora-%OS_VERSION%/ycollet-audinux-fedora-%OS_VERSION%.repo
+         - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
     
     install:
     - rust

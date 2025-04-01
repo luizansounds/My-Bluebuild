@@ -80,7 +80,6 @@ modules:
     - android-tools
     #- winehq-staging
 
-    - expat-2.6.3-1.fc41.x86_64
     - wine-9.21-13.wine_tkg.fc41.i686
     - wine-mono 
     - wine-dxvk

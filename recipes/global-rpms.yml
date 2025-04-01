@@ -79,7 +79,8 @@ modules:
     - bluez-deprecated
     - android-tools
     #- winehq-staging
-    
+
+    - expat-2.6.3-1.fc41.x86_64
     - wine
     - wine-mono 
     - wine-dxvk

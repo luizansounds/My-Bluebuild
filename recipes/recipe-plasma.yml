@@ -24,20 +24,20 @@ modules:
         #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
   - type: dnf
     source: ghcr.io/blue-build/modules/dnf:dnf-module
-    repos:
-    cleanup: true
-    copr:
-    - hazel-bunny/ricing
+     repos:
+     cleanup: true
+     copr:
+         - hazel-bunny/ricing
     install:
-    allow-erasing: true
-    install-weak-deps: false
-    packages:
-    - klassy
+     allow-erasing: true
+     install-weak-deps: false
+     packages:
+         - klassy
 
   - type: rpm-ostree
     install:
-      - yakuake 
-      - transmission-qt
+         - yakuake 
+         - transmission-qt
 
     remove:
       # example: removing firefox (in favor of the flatpak)

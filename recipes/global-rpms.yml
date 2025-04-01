@@ -81,7 +81,7 @@ modules:
     #- winehq-staging
 
     - wine-9.21-13.wine_tkg.fc41.i686
-    - wine-mono 
-    - wine-dxvk
-    - yabridge 
+    #- wine-mono 
+    #- wine-dxvk
+    #- yabridge 
     - libcurl-gnutls 

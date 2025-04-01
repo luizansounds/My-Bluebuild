@@ -5,9 +5,9 @@ modules:
     files:
       - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
-  - type: bling
-    install:
-         - rpmfusion
+  #- type: bling
+    #install:
+         #- rpmfusion
          
   - type: rpm-ostree
     repos:
@@ -64,7 +64,7 @@ modules:
     - mommy
     - zellij
     - neovim
-    - mpd
+    #- mpd
     - mpc
     - ncmpcpp
     - mpdscribble

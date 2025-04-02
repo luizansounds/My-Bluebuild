@@ -24,7 +24,7 @@ modules:
         #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
   - type: dnf
     source: ghcr.io/blue-build/modules/dnf:dnf-module
-     repos:
+    repos:
      cleanup: true
      copr:
          - hazel-bunny/ricing

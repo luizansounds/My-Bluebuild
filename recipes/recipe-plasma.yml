@@ -45,7 +45,7 @@ modules:
      install-weak-deps: false
      packages:
        install:
-         - repo: - copr:copr.fedorainfracloud.org:patrickl/wine-tkg
+         - repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
          #- https://raw.githubusercontent.com/luizansounds/My-Bluebuild/refs/heads/main/wine-tkg.repo
            packages:
              - wine.x86_64

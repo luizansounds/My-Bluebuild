@@ -1,0 +1,24 @@
+[copr:copr.fedorainfracloud.org:patrickl:wine-tkg]
+name=Copr repo for wine-tkg owned by patrickl
+baseurl=https://download.copr.fedorainfracloud.org/results/patrickl/wine-tkg/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/patrickl/wine-tkg/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+priority=98
+
+[copr:copr.fedorainfracloud.org:patrickl:wine-tkg:ml]
+name=Copr repo for wine-tkg owned by patrickl (i386)
+baseurl=https://download.copr.fedorainfracloud.org/results/patrickl/wine-tkg/fedora-$releasever-i386/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/patrickl/wine-tkg/pubkey.gpg
+repo_gpgcheck=0
+cost=1100
+enabled=1
+enabled_metadata=1
+priority=98

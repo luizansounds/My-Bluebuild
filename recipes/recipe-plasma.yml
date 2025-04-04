@@ -27,7 +27,8 @@ modules:
     repos:
      cleanup: true
      copr:
-         - patrickl/wine-tkg
+         - https://raw.githubusercontent.com/luizansounds/My-Bluebuild/refs/heads/main/recipes/copr%3Acopr.fedorainfracloud.org%3Apatrickl%3Awine-tkg.repo
+         #- patrickl/wine-tkg
          - patrickl/wine-mono
         #- patrickl/mingw-wine-gecko
          - patrickl/vkd3d

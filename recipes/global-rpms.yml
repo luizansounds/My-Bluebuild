@@ -10,40 +10,7 @@ modules:
     install:
     - rpmfusion
 
-  #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
-  - type: dnf
-    source: ghcr.io/blue-build/modules/dnf:dnf-module
-    repos:
-     cleanup: true
-     copr:
-         - patrickl/wine-tkg
-         - patrickl/wine-mono
-        #- patrickl/mingw-wine-gecko
-         - patrickl/vkd3d
-         - patrickl/wine-dxvk
-         - patrickl/winetricks
-         - patrickl/yabridge
-         - patrickl/libcurl-gnutls
-         - szpadel/spotifyd 
-         - varlad/zellij 
-         - fwdekker/mommy
-         - ycollet/audinux
 
-    install:
-     allow-erasing: true
-     install-weak-deps: false
-     packages:
-         - wine.x86_64
-         - wine.i686
-         - wine-mono
-         - mingw32-wine-gecko
-         - mingw64-wine-gecko
-         - wine-dxvk
-         - winetricks
-         - yabridge
-         - libcurl-gnutls
-         - zellij
-         - mommy
          
 
   - type: rpm-ostree

@@ -43,7 +43,7 @@ modules:
     install:
      allow-erasing: true
      install-weak-deps: false
-    packages:
+     packages:
          - repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
            packages:
              - wine-9.4-12.wine_tkg.fc41.x86_64

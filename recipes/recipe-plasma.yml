@@ -27,7 +27,6 @@ modules:
     repos:
      cleanup: true
      copr:
-         - https://raw.githubusercontent.com/luizansounds/My-Bluebuild/refs/heads/main/wine-tkg.repo
          #- patrickl/wine-tkg
          - patrickl/wine-mono
         #- patrickl/mingw-wine-gecko
@@ -45,6 +44,10 @@ modules:
      allow-erasing: true
      install-weak-deps: false
      packages:
+        repo: 
+         #- https://raw.githubusercontent.com/luizansounds/My-Bluebuild/refs/heads/main/wine-tkg.repo
+         - copr:copr.fedorainfracloud.org:patrickl/wine-tkg
+         packages:
          - wine.x86_64
          - wine.i686
          - wine-mono

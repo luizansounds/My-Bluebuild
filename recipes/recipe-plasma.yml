@@ -43,9 +43,9 @@ modules:
     install:
      allow-erasing: true
      install-weak-deps: false
-    #packages:
+    packages:
          #- repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
-           packages:
+           #packages:
              - wine.x86_64
              - wine.i686
              - wine-mono

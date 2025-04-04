@@ -44,22 +44,22 @@ modules:
      allow-erasing: true
      install-weak-deps: false
      packages:
-        repo: 
+       install:
+         - repo: - copr:copr.fedorainfracloud.org:patrickl/wine-tkg
          #- https://raw.githubusercontent.com/luizansounds/My-Bluebuild/refs/heads/main/wine-tkg.repo
-         - copr:copr.fedorainfracloud.org:patrickl/wine-tkg
-         packages:
-         - wine.x86_64
-         - wine.i686
-         - wine-mono
-         - mingw32-wine-gecko
-         - mingw64-wine-gecko
-         - wine-dxvk
-         - winetricks
-         - yabridge
-         - libcurl-gnutls
-         - zellij
-         - mommy
-         - klassy
+           packages:
+             - wine.x86_64
+             - wine.i686
+             - wine-mono
+             - mingw32-wine-gecko
+             - mingw64-wine-gecko
+             - wine-dxvk
+             - winetricks
+             - yabridge
+             - libcurl-gnutls
+             - zellij
+             - mommy
+             - klassy
          
   - type: rpm-ostree
     install:

@@ -39,7 +39,7 @@ modules:
          - varlad/zellij 
          - fwdekker/mommy
          - ycollet/audinux
-        - hazel-bunny/ricing
+         - hazel-bunny/ricing
     install:
      allow-erasing: true
      install-weak-deps: false

@@ -27,7 +27,7 @@ modules:
     repos:
      cleanup: true
      copr:
-         - patrickl/wine-tkg
+         #- patrickl/wine-tkg
          - patrickl/wine-mono
         #- patrickl/mingw-wine-gecko
          - patrickl/vkd3d
@@ -44,20 +44,19 @@ modules:
      allow-erasing: true
      install-weak-deps: false
     packages:
-         #- repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
-           #packages:
-             - wine.x86_64
-             - wine.i686
-             - wine-mono
-             - mingw32-wine-gecko
-             - mingw64-wine-gecko
-             - wine-dxvk
-             - winetricks
-             - yabridge
-             - libcurl-gnutls
-             - zellij
-             - mommy
-             - klassy
+         - repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
+           packages:
+             - wine-9.4-12.wine_tkg.fc41.x86_64
+         - wine-mono
+         - mingw32-wine-gecko
+         - mingw64-wine-gecko
+         - wine-dxvk
+         - winetricks
+         - yabridge
+         - libcurl-gnutls
+         - zellij
+         - mommy
+         - klassy
          
   - type: rpm-ostree
     install:

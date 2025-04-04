@@ -27,7 +27,7 @@ modules:
     repos:
      cleanup: true
      copr:
-         #- patrickl/wine-tkg
+         - patrickl/wine-tkg
          - patrickl/wine-mono
         #- patrickl/mingw-wine-gecko
          - patrickl/vkd3d
@@ -43,9 +43,8 @@ modules:
     install:
      allow-erasing: true
      install-weak-deps: false
-     packages:
-         - repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
-         #- https://raw.githubusercontent.com/luizansounds/My-Bluebuild/refs/heads/main/wine-tkg.repo
+    #packages:
+         #- repo: copr:copr.fedorainfracloud.org:patrickl/wine-tkg
            packages:
              - wine.x86_64
              - wine.i686

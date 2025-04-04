@@ -21,19 +21,42 @@ modules:
       #- source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         #destination: /
 
-        #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
+  #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
   - type: dnf
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
      cleanup: true
      copr:
-         - hazel-bunny/ricing
+         - patrickl/wine-tkg
+         - patrickl/wine-mono
+        #- patrickl/mingw-wine-gecko
+         - patrickl/vkd3d
+         - patrickl/wine-dxvk
+         - patrickl/winetricks
+         - patrickl/yabridge
+         - patrickl/libcurl-gnutls
+         - szpadel/spotifyd 
+         - varlad/zellij 
+         - fwdekker/mommy
+         - ycollet/audinux
+        - hazel-bunny/ricing
     install:
      allow-erasing: true
      install-weak-deps: false
      packages:
+         - wine.x86_64
+         - wine.i686
+         - wine-mono
+         - mingw32-wine-gecko
+         - mingw64-wine-gecko
+         - wine-dxvk
+         - winetricks
+         - yabridge
+         - libcurl-gnutls
+         - zellij
+         - mommy
          - klassy
-
+         
   - type: rpm-ostree
     install:
          - yakuake 

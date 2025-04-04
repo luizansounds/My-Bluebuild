@@ -14,54 +14,13 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 
 modules:
- # - from-file: global-rpms.yml
+ - from-file: global-rpms.yml
   
   #- type: files
     #files:
       #- source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         #destination: /
 
-  #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
-  - type: dnf
-    source: ghcr.io/blue-build/modules/dnf:dnf-module
-    repos:
-     cleanup: true
-     copr:
-         - patrickl/wine-tkg
-         - patrickl/wine-mono
-        #- patrickl/mingw-wine-gecko
-         - patrickl/vkd3d
-         - patrickl/wine-dxvk
-         - patrickl/winetricks
-         - patrickl/yabridge
-         - patrickl/libcurl-gnutls
-         - szpadel/spotifyd 
-         - varlad/zellij 
-         - fwdekker/mommy
-         - ycollet/audinux
-         - hazel-bunny/ricing
-    install:
-     allow-erasing: true
-     install-weak-deps: false
-     packages:
-         #- repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
-         #  packages:
-         - wine-9.4-12.wine_tkg.fc41.x86_64 
-         - wine-mono
-         - mingw32-wine-gecko
-         - mingw64-wine-gecko
-         - wine-dxvk
-         - winetricks
-         - yabridge
-         - libcurl-gnutls
-         - zellij
-         - mommy
-         - klassy
-    #replace:
-     #    packages:
-      #   - repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
-       #    packages:
-        #     - wine-9.4-12.wine_tkg.fc41.x86_64 
   - type: rpm-ostree
     install:
          - yakuake 

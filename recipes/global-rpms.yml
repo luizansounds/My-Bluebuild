@@ -50,55 +50,55 @@ modules:
     repos:
          - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
     install:
-         -rust
-         -cargo    
-         -python-pip
-         -go
-         -npm
-         -pnpm
-         -zsh
-         -zsh-autosuggestions
-         -zsh-syntax-highlighting 
-         -tmux
-         -dialog
-         -pipewire    
-         -unrar
-         -p7zip 
-         -p7zip-plugins
-         -eza
-         -pavucontrol
-         -htop
-         -mc
-         -fastfetch
-         -pamixer
-         -playerctl
-         -steam-devices
-         -ffmpeg
-         -cava
-         -fftw3
-         -cronie
-         -cronie-anacron
-         -cmake 
-         -meson
-         -ninja-build
-         -nu
-         -easyeffects
-         -virt-manager
-         -libayatana-appindicator-gtk3 
-         -java-21-openjdk
-         -neovim
-         -mpc
-         -ncmpcpp
-         -mpdscribble
-         -elinks
-         -igt-gpu-tools
-         -dex-autostart
-         -transmission-daemon
-         -realtime-setup
-         -bluez-tools
-         -bluez-deprecated
-         -android-tools
+         - rust
+         - cargo    
+         - python-pip
+         - go
+         - npm
+         - pnpm
+         - zsh
+         - zsh-autosuggestions
+         - zsh-syntax-highlighting 
+         - tmux
+         - dialog
+         - pipewire    
+         - unrar
+         - p7zip 
+         - p7zip-plugins
+         - eza
+         - pavucontrol
+         - htop
+         - mc
+         - fastfetch
+         - pamixer
+         - playerctl
+         - steam-devices
+         - ffmpeg
+         - cava
+         - fftw3
+         - cronie
+         - cronie-anacron
+         - cmake 
+         - meson
+         - ninja-build
+         - nu
+         - easyeffects
+         - virt-manager
+         - libayatana-appindicator-gtk3 
+         - java-21-openjdk
+         - neovim
+         - mpc
+         - ncmpcpp
+         - mpdscribble
+         - elinks
+         - igt-gpu-tools
+         - dex-autostart
+         - transmission-daemon
+         - realtime-setup
+         - bluez-tools
+         - bluez-deprecated
+         - android-tools
 
          #Extra Repos
-         -mympd #(jcorporation)
-         -mpd #(RPM-Fusion)
+         - mympd #(jcorporation)
+         - mpd #(RPM-Fusion)

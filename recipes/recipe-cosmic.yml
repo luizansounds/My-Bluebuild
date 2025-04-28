@@ -45,15 +45,10 @@ modules:
          - cosmic-ext-applet-external-monitor-brightness
          - cosmic-ext-applet-emoji-selector
          - cosmic-ext-applet-minimon
-
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-    - cosmic-player
-    - cosmic-store
-    - firefox
-    #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-    
+     packages:
+        - cosmic-store
+        
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

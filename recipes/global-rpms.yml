@@ -12,7 +12,6 @@ modules:
 
   #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
   - type: dnf
-    source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
      files:
          - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo

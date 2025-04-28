@@ -28,8 +28,7 @@ modules:
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks
+         - firefox
       #- mesa-dri-drivers-25.0.2-2.fc41.x86_64
        # also remove firefox dependency (not required for all packages, this is a special case)
   

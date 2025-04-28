@@ -52,7 +52,7 @@ modules:
     - cosmic-player
     - cosmic-store
     - firefox
-    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+    #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     
   - type: brew
     # Auto-update Brew binary

@@ -15,31 +15,36 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
 
-  #- from-file: global-rpms.yml
+  - from-file: global-rpms.yml
   
   - type: files
     files:
       - source: local   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
-
-  - type: rpm-ostree
-    repos: 
-    - https://copr.fedorainfracloud.org/coprs/wiiznokes/cosmic-applets-unofficial/repo/fedora-%OS_VERSION%/wiiznokes-cosmic-applets-unofficial-fedora-%OS_VERSION%.repo
-       
+        
+  - type: dnf
+    source: ghcr.io/blue-build/modules/dnf:dnf-module
+    repos:
+     cleanup: true
+     copr:
+         - wiiznokes/cosmic-applets-unofficial 
     install:
-    - nemo
-    - nemo-fileroller
-    - file-roller
-    - mate-polkit
-    - firewall-config
-    - seahorse
-    - gparted
-    - cosmic-ext-applet-clipboard-manager
-    - cosmic-ext-applet-ollama
-    - cosmic-ext-applet-external-monitor-brightness
-    - cosmic-ext-applet-emoji-selector
-    - cosmic-ext-applet-minimon
-
+     allow-erasing: true
+     install-weak-deps: false
+     packages:
+         #- repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
+         - nemo
+         - nemo-fileroller
+         - file-roller
+         - mate-polkit
+         - firewall-config
+         - seahorse
+         - gparted
+         - cosmic-ext-applet-clipboard-manager
+         - cosmic-ext-applet-ollama
+         - cosmic-ext-applet-external-monitor-brightness
+         - cosmic-ext-applet-emoji-selector
+         - cosmic-ext-applet-minimon
 
     remove:
       # example: removing firefox (in favor of the flatpak)

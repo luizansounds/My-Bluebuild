@@ -14,6 +14,8 @@ modules:
   - type: dnf
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
+     files:
+         - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
      cleanup: true
      copr:
          - patrickl/wine-tkg
@@ -28,7 +30,6 @@ modules:
          - varlad/zellij 
          - fwdekker/mommy
          - ycollet/audinux
-         - hazel-bunny/ricing
     install:
      allow-erasing: true
      install-weak-deps: false
@@ -44,8 +45,61 @@ modules:
          - yabridge
          - libcurl-gnutls
          - zellij
-         - mommy
-         - klassy
+         - mommy 
+         - mympd #(jcorporation)
+         - mpd #(RPM-Fusion)
+         
+         ##MAIN##
+         
+         - rust
+         - cargo    
+         - python-pip
+         - go
+         - npm
+         - pnpm
+         - zsh
+         - zsh-autosuggestions
+         - zsh-syntax-highlighting 
+         - tmux
+         - dialog
+         - pipewire    
+         - unrar
+         - p7zip 
+         - p7zip-plugins
+         - eza
+         - pavucontrol
+         - htop
+         - mc
+         - fastfetch
+         - pamixer
+         - playerctl
+         - steam-devices
+         - ffmpeg
+         - cava
+         - fftw3
+         - cronie
+         - cronie-anacron
+         - cmake 
+         - meson
+         - ninja-build
+         - nu
+         - easyeffects
+         - virt-manager
+         - libayatana-appindicator-gtk3 
+         - java-21-openjdk
+         - neovim
+         - mpc
+         - ncmpcpp
+         - mpdscribble
+         - elinks
+         - igt-gpu-tools
+         - dex-autostart
+         - transmission-daemon
+         - realtime-setup
+         - bluez-tools
+         - bluez-deprecated
+         - android-tools
+
     #replace:
      #    packages:
       #   - repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg

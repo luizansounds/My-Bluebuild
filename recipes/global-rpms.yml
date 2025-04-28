@@ -50,7 +50,6 @@ modules:
          - mpd #(RPM-Fusion)
          
          ##MAIN##
-         
          - rust
          - cargo    
          - python-pip
@@ -99,67 +98,7 @@ modules:
          - bluez-tools
          - bluez-deprecated
          - android-tools
-
-    #replace:
-     #    packages:
-      #   - repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
-       #    packages:
-        #     - wine-9.4-12.wine_tkg.fc41.x86_64 
-         
-
-  - type: rpm-ostree
-    repos:
-         - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
-    install:
-         - rust
-         - cargo    
-         - python-pip
-         - go
-         - npm
-         - pnpm
-         - zsh
-         - zsh-autosuggestions
-         - zsh-syntax-highlighting 
-         - tmux
-         - dialog
-         - pipewire    
-         - unrar
-         - p7zip 
-         - p7zip-plugins
-         - eza
-         - pavucontrol
-         - htop
-         - mc
-         - fastfetch
-         - pamixer
-         - playerctl
-         - steam-devices
-         - ffmpeg
-         - cava
-         - fftw3
-         - cronie
-         - cronie-anacron
-         - cmake 
-         - meson
-         - ninja-build
-         - nu
-         - easyeffects
-         - virt-manager
-         - libayatana-appindicator-gtk3 
-         - java-21-openjdk
-         - neovim
-         - mpc
-         - ncmpcpp
-         - mpdscribble
-         - elinks
-         - igt-gpu-tools
-         - dex-autostart
-         - transmission-daemon
-         - realtime-setup
-         - bluez-tools
-         - bluez-deprecated
-         - android-tools
-
-         #Extra Repos
-         - mympd #(jcorporation)
-         - mpd #(RPM-Fusion)
+   remove:
+    packages:
+         - firefox
+         - firefox-langpacks

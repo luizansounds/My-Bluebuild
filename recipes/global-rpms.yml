@@ -98,6 +98,6 @@ modules:
          - bluez-deprecated
          - android-tools
    remove:
-    packages:
+   packages:
          - firefox
          - firefox-langpacks

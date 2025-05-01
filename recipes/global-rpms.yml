@@ -97,7 +97,7 @@ modules:
          - bluez-tools
          - bluez-deprecated
          - android-tools
-   remove:
-   packages:
+    remove:
+     packages:
          - firefox
          - firefox-langpacks

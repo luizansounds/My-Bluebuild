@@ -81,7 +81,7 @@ modules:
          - meson
          - ninja-build
          - nu
-         - easyeffects
+         #- easyeffects
          - virt-manager
          - libayatana-appindicator-gtk3 
          - java-21-openjdk
@@ -97,6 +97,8 @@ modules:
          - bluez-tools
          - bluez-deprecated
          - android-tools
+         - zenity
+         - calf
     remove:
      packages:
          - firefox

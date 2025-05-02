@@ -17,13 +17,7 @@ modules:
 
   - from-file: global-rpms.yml
   
-  - type: files
-    files:
-      - source: local   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-        destination: /
-        
   - type: dnf
-    source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
      cleanup: true
      copr:
@@ -47,7 +41,7 @@ modules:
          - cosmic-ext-applet-minimon
     remove:
      packages:
-        - cosmic-store
+         - cosmic-store
         
   - type: brew
     # Auto-update Brew binary

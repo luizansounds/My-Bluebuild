@@ -99,6 +99,7 @@ modules:
          - android-tools
          - zenity
          - calf
+         - easyeffects
     remove:
      packages:
          - firefox

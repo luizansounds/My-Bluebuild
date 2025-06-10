@@ -100,6 +100,8 @@ modules:
          - zenity
          - calf
          - easyeffects
+         - lv2-calf-plugins
+         - lv2-calf-plugins-gui
     remove:
      packages:
          - firefox

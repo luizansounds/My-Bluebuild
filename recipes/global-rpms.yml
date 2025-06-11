@@ -102,6 +102,7 @@ modules:
          - easyeffects
          - lv2-calf-plugins
          - lv2-calf-plugins-gui
+         - lsp-plugins
     remove:
      packages:
          - firefox

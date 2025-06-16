@@ -21,7 +21,8 @@ modules:
       - hazel-bunny/ricing
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 
-      - yalter/niri 
+      - yalter/niri
+      - yalter/niri-git
       - ulysg/xwayland-satellite 
     install:
      allow-erasing: true
@@ -42,7 +43,7 @@ modules:
          - partitionmanager
          - kvantum
          - cosmic-greeter  
-         - niri
+         - niri-git
          - xwayland-satellite
          - vlc-plugins-freeworld
          - fuzzel

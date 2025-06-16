@@ -81,7 +81,6 @@ modules:
          - meson
          - ninja-build
          - nu
-         #- easyeffects
          - virt-manager
          - libayatana-appindicator-gtk3 
          - java-21-openjdk

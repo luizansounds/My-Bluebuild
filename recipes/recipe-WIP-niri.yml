@@ -12,10 +12,6 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 modules:
   - from-file: global-rpms.yml
   
-  - type: files
-    files:
-      - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-        destination: /
   - type: dnf
     repos:
      copr:
@@ -26,7 +22,6 @@ modules:
       - ulysg/xwayland-satellite 
     install:
      packages:
-         - niri
          - yakuake 
          - transmission-qt
          - terminator
@@ -44,6 +39,7 @@ modules:
          - cosmic-greeter  
          - niri
          - xwayland-satellite
+         
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

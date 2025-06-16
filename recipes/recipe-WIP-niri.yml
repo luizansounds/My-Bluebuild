@@ -21,7 +21,7 @@ modules:
       - hazel-bunny/ricing
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 
-      - yalter/niri
+      #- yalter/niri
       - yalter/niri-git
       - ulysg/xwayland-satellite 
     install:
@@ -40,8 +40,8 @@ modules:
          - seahorse
          - partitionmanager
          - kvantum
-         - cosmic-greeter  
-         - niri-git
+         #- cosmic-greeter  
+         - niri
          - xwayland-satellite
          - vlc-plugins-freeworld
          - fuzzel

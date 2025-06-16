@@ -29,6 +29,7 @@ modules:
          - varlad/zellij 
          - fwdekker/mommy
          - ycollet/audinux
+         - lchh/navidrome
     install:
      allow-erasing: true
      install-weak-deps: false

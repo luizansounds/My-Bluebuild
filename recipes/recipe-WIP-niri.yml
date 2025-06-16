@@ -45,6 +45,7 @@ modules:
          - niri
          - xwayland-satellite
          - vlc-plugins-freeworld
+         - fuzzel
          
   - type: brew
     # Auto-update Brew binary

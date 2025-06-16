@@ -48,6 +48,7 @@ modules:
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
          - nwg-look
+         - dex-autostart
          
   - type: brew
     # Auto-update Brew binary

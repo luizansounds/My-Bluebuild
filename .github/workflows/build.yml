@@ -23,7 +23,8 @@ jobs:
         recipe:
           # !! Add your recipes here 
           - recipe-plasma.yml
-          - recipe-cosmic.yml
+          - recipe-WIP-niri.yml
+          #- recipe-cosmic.yml
           #- recipe-sway.yml
           #- recipe-cosmic-sway.yml
 

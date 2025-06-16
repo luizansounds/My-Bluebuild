@@ -36,7 +36,8 @@ modules:
      packages:
          #- repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
          #  packages:
-         - wine-9.4-12.wine_tkg.fc41.x86_64 
+         #- wine-9.4-12.wine_tkg.fc42.x86_64 
+         - wine
          - wine-mono
          - mingw32-wine-gecko
          - mingw64-wine-gecko

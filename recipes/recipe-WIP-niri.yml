@@ -28,10 +28,8 @@ modules:
      allow-erasing: true
      install-weak-deps: false
      packages:
-         - yakuake 
+         - alacritty
          - transmission-qt
-         - terminator
-         - rofi
          - waybar
          - network-manager-applet
          - blueman

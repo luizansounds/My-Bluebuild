@@ -34,30 +34,28 @@ modules:
           - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
 
     install:
-    - terminator
-    - tilix
-    - swayfx
-    - swaync
-    - rofi
-    - waybar
-    - network-manager-applet
-    - blueman
-    - nemo
-    - nemo-fileroller
-    - grim
-    - slurp
-    - gscreenshot
-    - polkit-gnome
-    - firewall-config
-    - seahorse
-    #- steam
-    #- azote
-    - nwg-look
-    - gparted
-    - kvantum
-    - easyeffects
-    - virt-manager
-    - cosmic-greeter
+        - terminator
+        - tilix
+        - swayfx
+        - swaync
+        - rofi
+        - waybar
+        - network-manager-applet
+        - blueman
+        - nemo
+        - nemo-fileroller
+        - grim
+        - slurp
+        - gscreenshot
+        - polkit-gnome
+        - firewall-config
+        - seahorse
+        - nwg-look
+        - partitionmanager
+        - kvantum
+        - easyeffects
+        - virt-manager
+        - cosmic-greeter
     
     remove:
       # example: removing firefox (in favor of the flatpak)

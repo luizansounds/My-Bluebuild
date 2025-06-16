@@ -16,9 +16,7 @@ modules:
     files:
       - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
-
-
-    - type: dnf
+  - type: dnf
     repos:
      copr:
       - hazel-bunny/ricing

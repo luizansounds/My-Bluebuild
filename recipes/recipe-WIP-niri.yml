@@ -24,6 +24,8 @@ modules:
       - yalter/niri 
       - ulysg/xwayland-satellite 
     install:
+     allow-erasing: true
+     install-weak-deps: false
      packages:
          - yakuake 
          - transmission-qt

@@ -47,6 +47,7 @@ modules:
          - fuzzel
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
+         - nwg-look
          
   - type: brew
     # Auto-update Brew binary

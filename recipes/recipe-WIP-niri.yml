@@ -34,7 +34,7 @@ modules:
          - blueman
          - nemo
          - nemo-fileroller
-         - polkit-gnome
+         - mate-polkit
          - firewall-config
          - seahorse
          - partitionmanager

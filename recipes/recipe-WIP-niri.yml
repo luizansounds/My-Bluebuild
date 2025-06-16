@@ -25,8 +25,10 @@ modules:
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 
       - yalter/niri 
+      - ulysg/xwayland-satellite 
     install:
      packages:
+         - niri
          - yakuake 
          - transmission-qt
          - terminator
@@ -42,7 +44,8 @@ modules:
          - partitionmanager
          - kvantum
          - cosmic-greeter  
-         
+         - niri
+         - xwayland-satellite
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

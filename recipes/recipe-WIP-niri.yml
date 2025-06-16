@@ -24,6 +24,7 @@ modules:
       - hazel-bunny/ricing
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 
+      - yalter/niri 
     install:
      packages:
          - yakuake 

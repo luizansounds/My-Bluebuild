@@ -43,11 +43,11 @@ modules:
          #- cosmic-greeter  
          - niri
          - xwayland-satellite
-         - vlc-plugins-freeworld
+         #- vlc-plugins-freeworld
          - fuzzel
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
-         - nwg-look
+         #- nwg-look
          - dex-autostart
          
   - type: brew

@@ -50,7 +50,7 @@ modules:
          - xwayland-satellite
          #- vlc-plugins-freeworld
          - fuzzel
-         - xdg-desktop-portal-kde
+         - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
          - nwg-look
          - nwg-drawer

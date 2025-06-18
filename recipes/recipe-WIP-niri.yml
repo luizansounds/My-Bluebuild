@@ -54,6 +54,7 @@ modules:
          - xdg-desktop-portal-gtk
          - nwg-look
          - nwg-drawer
+         - nwg-menu
          
   - type: brew
     # Auto-update Brew binary

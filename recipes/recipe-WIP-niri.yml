@@ -23,8 +23,8 @@ modules:
       - hazel-bunny/ricing
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 
-      - yalter/niri
-      #- yalter/niri-git
+      #- yalter/niri
+      - yalter/niri-git
       - ulysg/xwayland-satellite 
     install:
      allow-erasing: true

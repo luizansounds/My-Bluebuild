@@ -55,6 +55,7 @@ modules:
          - nwg-look
          - nwg-drawer
          - nwg-menu
+         - dex-autostart
          
   - type: brew
     # Auto-update Brew binary

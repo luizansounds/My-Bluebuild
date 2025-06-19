@@ -8,7 +8,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 #base-image: ghcr.io/ublue-os/base-main
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/base-main
 
 image-version: 42 # latest is also supported if you want new updates ASAP
 
@@ -56,11 +56,8 @@ modules:
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
          - nwg-look
-         - nwg-drawer
-         - nwg-menu
          - dex-autostart
-         - sway
-         - gamescope
+         - SwayNotificationCenter
          - rofi-wayland
   - type: brew
     # Auto-update Brew binary

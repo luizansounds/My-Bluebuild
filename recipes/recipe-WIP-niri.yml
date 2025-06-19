@@ -20,7 +20,7 @@ modules:
   - type: dnf
     repos:
      copr:
-      - mjg/rofi-wayland 
+      #- mjg/rofi-wayland 
       - hazel-bunny/ricing
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 

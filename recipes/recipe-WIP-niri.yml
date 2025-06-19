@@ -28,6 +28,7 @@ modules:
       - yalter/niri-git
       - ulysg/xwayland-satellite
       - jerrycasiano/FontManager
+      - materka/swww
     install:
      allow-erasing: true
      install-weak-deps: false
@@ -59,6 +60,7 @@ modules:
          - dex-autostart
          - SwayNotificationCenter
          - rofi-wayland
+         - swww
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

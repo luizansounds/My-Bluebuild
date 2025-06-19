@@ -34,11 +34,9 @@ modules:
      install-weak-deps: false
      packages:
          - font-manager
-         - yakuake 
-         - transmission-qt
-         - klassy
-         - alacritty
-         - transmission-qt
+         - transmission-gtk
+         - guake
+         - matugen
          - waybar
          - network-manager-applet
          - blueman
@@ -49,10 +47,8 @@ modules:
          - seahorse
          - partitionmanager
          - kvantum
-         #- cosmic-greeter  
          - niri
          - xwayland-satellite
-         #- vlc-plugins-freeworld
          - fuzzel
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk

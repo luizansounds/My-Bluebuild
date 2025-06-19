@@ -20,6 +20,7 @@ modules:
   - type: dnf
     repos:
      copr:
+      - mjg/rofi-wayland 
       - hazel-bunny/ricing
       - tofik/nwg-shell
       - ryanabx/cosmic-epoch 
@@ -60,6 +61,7 @@ modules:
          - dex-autostart
          - sway
          - gamescope
+         - rofi-wayland
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

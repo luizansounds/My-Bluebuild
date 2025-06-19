@@ -28,7 +28,7 @@ modules:
       - yalter/niri-git
       - ulysg/xwayland-satellite
       - jerrycasiano/FontManager
-      - materka/swww
+      - solopasha/hyprland 
     install:
      allow-erasing: true
      install-weak-deps: false

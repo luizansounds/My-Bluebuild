@@ -25,11 +25,13 @@ modules:
       - ryanabx/cosmic-epoch 
       #- yalter/niri
       - yalter/niri-git
-      - ulysg/xwayland-satellite 
+      - ulysg/xwayland-satellite
+      - jerrycasiano/FontManager
     install:
      allow-erasing: true
      install-weak-deps: false
      packages:
+         - font-manager
          - yakuake 
          - transmission-qt
          - klassy

@@ -58,7 +58,8 @@ modules:
          - nwg-drawer
          - nwg-menu
          - dex-autostart
-         
+         - sway
+         - gamescope
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

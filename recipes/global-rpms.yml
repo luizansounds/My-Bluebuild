@@ -69,7 +69,7 @@ modules:
          - p7zip-plugins
          - eza
          - pavucontrol
-         - htop
+         - btop
          - mc
          - fastfetch
          - pamixer
@@ -112,3 +112,4 @@ modules:
      packages:
          - firefox
          - firefox-langpacks
+         - nvtop

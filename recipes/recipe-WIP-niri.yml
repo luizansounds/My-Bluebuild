@@ -59,7 +59,6 @@ modules:
          - swww
          - cosmic-epoch
     remove:
-    
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

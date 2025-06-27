@@ -59,7 +59,7 @@ modules:
          - swww
          - sway
          - cage
-         - gtk-greet
+         - gtkgreet
          
   - type: brew
     # Auto-update Brew binary

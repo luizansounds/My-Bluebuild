@@ -57,7 +57,10 @@ modules:
          - SwayNotificationCenter
          - rofi-wayland
          - swww
-         - cosmic-epoch
+         - sway
+         - cage
+         - gtk-greet
+         
   - type: brew
     # Auto-update Brew binary
     auto-update: true # Optional - Default: true - Expects type: boolean

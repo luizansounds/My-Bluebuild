@@ -1,0 +1,2 @@
+exec foot -e 'sh /etc/sway/install-config.sh'
+bindsym mod4+p exec reboot

@@ -61,6 +61,7 @@ modules:
          - sway
          - cage
          - gtkgreet
+         - tuigreet
                   
   - type: brew
     # Auto-update Brew binary

@@ -62,6 +62,7 @@ modules:
          - cage
          - gtkgreet
          - tuigreet
+         - greetd-fakegreet
                   
   - type: brew
     # Auto-update Brew binary

@@ -4,7 +4,7 @@ modules:
   - type: files
     files:
     - source: usr-copy   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-      destination: /usr
+      destination: /usr/share
       
   - type: bling
     install:

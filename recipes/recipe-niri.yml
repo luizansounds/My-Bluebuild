@@ -20,7 +20,7 @@ modules:
   - type: files
     files:
     - source: etc-copy   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-      destination: /usr
+      destination: /etc
       
   
   - type: dnf

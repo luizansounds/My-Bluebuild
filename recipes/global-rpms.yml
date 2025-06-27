@@ -107,7 +107,9 @@ modules:
          - lsp-plugins-lv2
          - lv2-zam-plugins
          - lv2-mdala-plugins
-         - carla
+         #- carla
+         - keyd
+
     remove:
      packages:
          - firefox

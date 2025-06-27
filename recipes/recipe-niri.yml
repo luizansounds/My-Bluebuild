@@ -69,6 +69,11 @@ modules:
          - gtkgreet
          - tuigreet
          - greetd-fakegreet
+  
+  - type: systemd
+    system:
+      enable:
+      - greetd.service
                   
   - type: brew
     # Auto-update Brew binary

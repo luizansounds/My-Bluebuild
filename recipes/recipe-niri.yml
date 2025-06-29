@@ -60,7 +60,7 @@ modules:
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
          - nwg-look
-         - dex-autostart
+         #- dex-autostart
          - SwayNotificationCenter
          - rofi-wayland
          - swww

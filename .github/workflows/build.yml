@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          repository: org/parent_repository
+          repository: luizansounds/config
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
           submodules: true
       - name: Pull & update submodules recursively

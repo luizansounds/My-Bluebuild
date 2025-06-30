@@ -38,7 +38,6 @@ modules:
     install:
      allow-erasing: true
      install-weak-deps: false
-     skip-unavailable: true
      packages:
          - font-manager
          - transmission-gtk

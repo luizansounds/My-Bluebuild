@@ -62,12 +62,10 @@ modules:
          - zsh-autosuggestions
          - zsh-syntax-highlighting 
          - tmux
-         - dialog
-         - pipewire    
+         - dialog 
          - unrar
          - p7zip 
          - p7zip-plugins
-         - eza
          - pavucontrol
          - btop
          - mc

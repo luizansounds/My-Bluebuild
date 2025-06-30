@@ -30,6 +30,7 @@ modules:
          - fwdekker/mommy
          - ycollet/audinux
          - lchh/navidrome
+         - atim/lazygit
     install:
      skip-unavailable: false
      allow-erasing: true

@@ -31,6 +31,7 @@ modules:
          - ycollet/audinux
          - lchh/navidrome
          - atim/lazygit
+         - alternateved/eza
     install:
      skip-unavailable: false
      allow-erasing: true
@@ -110,6 +111,7 @@ modules:
          - usbutils
          - pciutils
          - lazygit
+         - eza
 
     remove:
      packages:

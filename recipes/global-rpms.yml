@@ -31,7 +31,7 @@ modules:
          - ycollet/audinux
          - lchh/navidrome
     install:
-     skip-unavailable: true
+     skip-unavailable: false
      allow-erasing: true
      install-weak-deps: false
      packages:

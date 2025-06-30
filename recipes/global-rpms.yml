@@ -107,8 +107,9 @@ modules:
          - lsp-plugins-lv2
          - lv2-zam-plugins
          - lv2-mdala-plugins
-         #- carla
-         - keyd
+         - carla
+         - usbutils
+         - pciutils
 
     remove:
      packages:

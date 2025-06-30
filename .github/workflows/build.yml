@@ -32,7 +32,7 @@ jobs:
           git push
   bluebuild:
     name: Build Custom Image
-    neeeds:update 
+    needs:update
     runs-on: ubuntu-latest
     permissions:
       contents: read

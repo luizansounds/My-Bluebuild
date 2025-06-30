@@ -110,6 +110,7 @@ modules:
          - carla
          - usbutils
          - pciutils
+         - lazygit
 
     remove:
      packages:

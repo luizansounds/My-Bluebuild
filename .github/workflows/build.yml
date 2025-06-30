@@ -9,29 +9,20 @@ on:
       
   pull_request:
   workflow_dispatch: # allow manually triggering builds
+  
 jobs:
-  name: Send submodule updates to parent repo
-
-on:
-  push:
-    branches: 
-      - main
-
   update:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
         with: 
-          repository: luizansounds/config
+          repository: org/parent_repository
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
           submodules: true
-
       - name: Pull & update submodules recursively
         run: |
           git submodule update --init --recursive
           git submodule update --recursive --remote
-
       - name: Commit
         run: |
           git config user.email "actions@github.com"
@@ -40,6 +31,7 @@ on:
           git commit -m "Update submodules" || echo "No changes to commit"
           git push
 
+jobs:
   bluebuild:
     name: Build Custom Image
     runs-on: ubuntu-latest

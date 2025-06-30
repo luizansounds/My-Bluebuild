@@ -1,0 +1,3 @@
+[submodule "files/etc-copy/skel/--force"]
+	path = files/etc-copy/skel/--force
+	url = https://github.com/luizansounds/.config.git

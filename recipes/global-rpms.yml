@@ -118,3 +118,4 @@ modules:
          - firefox
          - firefox-langpacks
          - nvtop
+         - just

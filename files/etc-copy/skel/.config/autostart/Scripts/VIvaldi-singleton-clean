@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+rm -rf /home/luiza/.config/vivaldi/SingletonCookie /home/luiza/.config/vivaldi/SingletonLock /home/luiza/.config/vivaldi/SingletonSocket

@@ -1,0 +1,52 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+# Auth with polkit-gnome:
+exec /usr/libexec/polkit-gnome-authentication-agent-1
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec gnome-keyring-daemon --start --components=secrets
+
+# Desktop notifications
+exec swaync
+
+# Network Applet
+exec nm-applet --indicator
+exec blueman-applet
+
+exec for file in ~/.config/autostart/*.desktop; do xdg-open "$file"; done
+
+# GTK3 applications take a long time to start
+
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+exec ~/.local/lu-dotfiles/.config/sway/scripts/sway-systemd/session.sh --with-cleanup
+exec ~/.local/lu-dotfiles/.config/sway/scripts/sway-systemd/assign-cgroups.py   
+
+# Welcome App
+#exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+
+exec autotiling
+ exec flatpak run dev.vencord.Vesktop
+ exec flatpak run org.ferdium.Ferdium
+ exec easyeffect --gapplication-service
+# exec flatpak run com.discordapp.Discord
+exec steam -nochatui -nofriendsui -silent
+# exec input-remapper-control --command autoload
+# exec input-remapper-service
+# exec foot -e sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080 && sudo iptables -t nat -I OUTPUT -p tcp -d 127.0.0.1 --dport 80 -j REDIRECT --to-ports 8080
+# exec noip2 -c ~/.config/noip2.toml
+# exec navidrome --configfile "/home/luiza/.config/navidrome.toml"
+
+exec nemo
+exec pavucontrol
+# exec flatpak run com.spotify.Client
+
+# Sway Fader
+# exec python3 ~/.config/sway/scripts/endeavour/swayfader.py      
+
+exec ~/.extra/scripts/spotifyd
+
+exec pw-loopback --capture-props='node.target=youroutput' --playback-props='media.class=Audio/Source node.name=virtmic node.description="audio-loopback(use qpwgraph)"'
+
+#exec flatpak run org.rncbc.qpwgraph -m   

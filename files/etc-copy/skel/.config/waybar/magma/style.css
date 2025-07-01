@@ -1,0 +1,234 @@
+    *{border-radius: 4px; font-family: Ubuntu, Symbols Nerd Font mono; min-height: 15px;}
+
+window#waybar.top-bar {
+/*    background: linear-gradient(to right, rgba(6, 23, 46, 0.377),rgba(16, 20, 23, 0.418));*/
+    background: rgba(10,10,10,0.2);
+    /*border-bottom: 1px solid;
+    border-color: rgba(175,212,223,0.2);*/
+    font-size: 16px;}
+
+
+
+/*CUSTOM/ WAYBAR PLUGINS*/
+
+#custom-launcher{
+    color: #d462a6;
+    background-color: rgb(24, 24, 24);
+    border-radius: 100px;
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-power{
+
+    color: #a50062;
+    border-radius: 100px;
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    margin: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-azote{
+ 
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    margin: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-updater{    
+    background-color: rgb(24, 24, 24);
+    color: #d462a6;
+    border-radius: 100px;
+    margin-left: 2px;
+    margin-right: 2px;
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-waybar-mpris{
+
+        background-color: #3c5066;
+        color: #e3e3e3;
+        border-radius: 100px;
+        font-size: 14px;
+        margin-left: 4px;
+        margin-right: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+}
+
+#custom-media{
+    color: #fddab6;
+
+    font-size: 14px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-droidcam{  
+
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    margin: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-notification {
+    background-color: rgb(24, 24, 24);
+    color: #fddab6;
+    border-radius: 100px;
+    margin-right: 2px;
+    font-family: "NotoSansMono Nerd Font";
+}
+
+
+/*DEFAULT WAYBAR PLUGINS*/
+#tray{
+    background-color: rgb(24, 24, 24);
+    border-radius: 100px;
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    margin: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#window{    
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    color:#e87abc;
+    font-size: 13px;
+    margin: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#battery{    
+    background-color: rgb(24, 24, 24);
+    color: #d462a6;
+    border-radius: 100px;
+
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#clock{    
+    background-color: rgb(24, 24, 24);
+    color: #f58d59;
+    border-radius: 100px;
+    font-size: 15px;
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    margin-left: 2px;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+
+#pulseaudio{
+    background-color: rgb(24, 24, 24);
+    color: #ffd9b8;
+    border-radius: 100px;
+    /*border: 1px solid;
+    border-color: @light-blue;*/
+    margin-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+#taskbar{
+    background-color: rgb(24, 24, 24);
+    color: #ffd9b8;
+    font-size: 13px;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#taskbar{
+    background-color: rgb(24, 24, 24);
+    color: #ffd9b8;
+    font-size: 13px;
+    border-radius: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#taskbar button.active{    
+    background-color: rgb(24, 24, 24);
+    color: #88ddff;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#taskbar button.minimized{
+    background-color: rgb(24, 24, 24);
+    color: #f7af78;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
+
+/*WORKSPACES PLUGINS*/
+#workspaces{    
+    background-color: rgb(24, 24, 24);
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    margin-left: 2px;
+    font-size: 11.5px;
+    color: #0f0f0f;}
+
+#workspaces button{
+    font-size: 11.5px;
+    color: #ff9b55;}
+
+#workspaces button.visible{
+    background-color: #ff9b55;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    font-size: 15px;
+    color: rgb(24, 24, 24);
+}
+
+#workspaces button.urgent{
+    font-size: 15px;
+    color: rgb(255, 96, 96)}
+
+
+

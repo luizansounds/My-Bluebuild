@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+navidrome -c /var/home/luiza/.config/navidrome/navidrome.toml

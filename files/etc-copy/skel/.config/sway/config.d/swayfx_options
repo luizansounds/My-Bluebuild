@@ -1,0 +1,15 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+blur on
+blur_xray off
+blur_passes 2
+blur_radius 3
+corner_radius 7
+
+shadows on
+shadow_blur_radius 30
+shadow_color #000000dd
+
+scratchpad_minimize enable
+
+# default_dim_inactive 0.3

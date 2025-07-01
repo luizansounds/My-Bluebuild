@@ -1,0 +1,4 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/*
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/WM-Keybinds/*
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/Keybinds/*
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/Application-Rules/*

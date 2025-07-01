@@ -1,0 +1,18 @@
+[
+{
+"mode": "dock",
+"name": "top-bar",
+"layer": "top",
+"position":"top",
+"spacing": 0,
+"fixed-center": true,
+"margin-left": 0,
+"margin-right": 0,
+
+	"modules-left": ["custom/launcher","pulseaudio","custom/media"],
+	"modules-center": [],
+	"modules-right": ["custom/updater","clock","battery"],
+
+"include": "~/.local/lu-dotfiles/components/waybar-components/Module.json",
+},
+]

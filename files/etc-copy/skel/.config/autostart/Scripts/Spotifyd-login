@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+spotifyd -u elatetunic@gmail.com -d PC-DAEMON --device-type speaker --volume-normalisation --autoplay --password lblue135- --use-mpris true

@@ -1,0 +1,35 @@
+# Logo key. Use Mod1 for Alt.
+set $super Mod4
+set $alt Mod1
+ 
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# audio control
+set $sink_volume pactl get-sink-volume @DEFAULT_SINK@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
+set $source_volume pactl get-source-volume @DEFAULT_SOURCE@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
+set $volume_down $(pactl set-sink-volume @DEFAULT_SINK@ -5% && $sink_volume)
+set $volume_up $(pactl set-sink-volume @DEFAULT_SINK@ +5% && $sink_volume)
+set $volume_mute $(pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl get-sink-mute @DEFAULT_SINK@ | sed -En "/no/ s/.*/$($sink_volume)/p; /yes/ s/.*/0/p")
+set $mic_mute $(pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-source-mute @DEFAULT_SOURCE@ | sed -En "/no/ s/.*/$($source_volume)/p; /yes/ s/.*/0/p")
+
+#programs
+set $term terminator
+set $browser vivaldi
+set $files nemo
+set $image flatpak run org.gimp.GIMP
+set $text flatpak run com.visualstudio.code
+
+#rofi
+set $drun       ~/.local/lu-dotfiles/rofi-custom/Launcher/launcher.sh
+set $mpd        ~/.local/lu-dotfiles/.config/rofi/scripts/extra/mpd
+set $playerctl  ~/.local/lu-dotfiles/.config/rofi/scripts/extra/playerctl
+set $powermenu  ~/.local/lu-dotfiles/rofi-custom/Launcher/powermenu.sh
+set $run        ~/.local/lu-dotfiles/.config/rofi/scripts/extra/runner
+set $windows    ~/.local/lu-dotfiles/.config/rofi/scripts/extra/windows
+set $workspaces ~/.local/lu-dotfiles/.config/rofi/scripts/extra/workspaces
+set $screenshot gscreenshot
+set $utils      ~/.local/lu-dotfiles/.config/rofi/scripts/extra/Utils

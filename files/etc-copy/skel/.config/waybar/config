@@ -1,0 +1,44 @@
+[
+
+{
+	"mode": "dock",
+	"name": "top-bar",
+	"layer": "top",
+	"position":"top",
+	"height": 32,
+	"width":0,
+	"spacing": 0,
+	"fixed-center": true,
+	"margin-left": 6,
+	"margin-right": 6,
+	"margin-top": 6,
+	"margin-bottom": 0,
+	
+		"modules-left": ["custom/launcher-rofi","custom/separator","niri/window"],
+		"modules-center": ["clock",],
+		"modules-right": ["custom/notification","custom/separator","wireplumber","custom/separator","battery",],
+	
+	"include": "~/.config/waybar/Modules.json",
+	},
+
+	{
+		"mode": "dock",
+		"name": "bottom-bar",
+		"layer": "top",
+		"position":"bottom",
+		"height": 32,
+		"width":0,
+		"spacing": 0,
+		"fixed-center": true,
+		"margin-left": 6,
+		"margin-right": 6,
+		"margin-top": 0,
+		"margin-bottom": 6,
+		
+			"modules-left": [ "custom/nirioverview","niri/workspaces",],
+			"modules-center": ["wlr/taskbar",],
+			"modules-right": ["tray"],
+		
+		"include": "~/.config/waybar/Modules.json",
+		},
+]

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+zellij delete-all-sessions -y
+zellij attach -b -f minecraft-server
+zellij --session minecraft-server run -- sh $HOME/.extra/minecraft-server/server-start-base

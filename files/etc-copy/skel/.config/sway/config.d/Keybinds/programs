@@ -1,0 +1,14 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+#programs
+
+bindsym $super+Shift+f      exec $files
+bindsym $super+w            exec vivaldi
+#bindsym $super+f1           exec flatpak run com.discordapp.Discord
+bindsym $super+f1           exec vencorddesktop
+bindsym $super+Shift+f1     exec flatpak run de.shorsh.discord-screenaudio
+bindsym $super+f2           exec flatpak run com.github.eneshecan.WhatsAppForLinux 
+bindsym $super+g            exec $image
+bindsym $super+Shift+Return exec $term
+bindsym $super+e            exec $text
+bindsym Ctrl+$alt+c         exec /usr/lib/gpaste/gpaste-ui

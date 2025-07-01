@@ -1,0 +1,1 @@
+zellij --session minecraft-server run -- sh /home/luiza/.extra/minecraft-server/server-start-base

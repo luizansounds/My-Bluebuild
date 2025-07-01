@@ -1,0 +1,24 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords2
+
+    bindsym $super+Shift+f12 reload
+    bindsym $super+q kill
+
+    bindsym $super+b exec sh ~/.config/sway/scripts/toggles/waybar-toggle
+    bindsym $super+f12 exec $powermenu
+
+
+    bindsym $super+z exec $drun
+    bindsym $alt+q exec $windows
+    bindsym print exec $screenshot
+    bindsym $alt+$super+Tab exec $workspaces
+    bindsym $alt+Tab exec $windows
+    bindsym $super+u exec $utils
+#    bindsym print exec grim -g "$(slurp)" - | swappy -f -
+#    bindsym print+$super exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)" - | swappy -f -
+    bindsym print+$alt exec grim
+
+#
+# Backlight
+#
+    bindsym $alt+XF86AudioNext exec brightnessctl -c backlight set +5%
+    bindsym $alt+XF86AudioPrev exec brightnessctl -c backlight set 5%-

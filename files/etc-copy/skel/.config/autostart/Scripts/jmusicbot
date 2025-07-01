@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+java -Dnogui=true -Dconfig=/home/luiza/.extra/jmusicbot/config.txt -jar /home/luiza/.extra/jmusicbot/JMusicBot-0.4.1.jar
+

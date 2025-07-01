@@ -1,0 +1,345 @@
+//========================== CUSTOM MODULES ========================//
+{    
+  "custom/workspaces": {
+    "exec": "/home/luiza/.ssd/extra/settings/lu-dotfiles/components/waybar-components/workspaces.sh \"$WAYBAR_OUTPUT_NAME\"",
+    "signal": 8,
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+    "on-click": "niri msg action open-overview",
+    "smooth-scrolling-threshold": 0,
+    },
+
+  "custom/separator":{
+    "format":"|",
+  },
+
+  "custom/power":{
+    "format": " ",
+    "on-click": "~/.config/sway/scripts/Rofi/Scripts/archcraft/powermenu",
+    },
+  
+  "custom/updater":{
+    "format": " {}",
+    "exec": "checkupdates | wc -l",
+    "exec-if": "[[ $(checkupdates | wc -l) ]]",
+    "interval": 5,
+    "on-click": "kitty -e yay --noconfirm && flatpak update -y && notify-send 'The system has been updated'"
+    },
+
+    
+  "custom/waybar-mpris": {
+    "return-type": "json",
+    "exec": "waybar-mpris --position --autofocus",
+    "on-click": "waybar-mpris --send toggle",
+      // This option will switch between players on right click.
+          "on-click-right": "waybar-mpris --send player-next",
+      // The options below will switch the selected player on scroll
+          // "on-scroll-up": "waybar-mpris --send player-next",
+          // "on-scroll-down": "waybar-mpris --send player-prev",
+      // The options below will go to next/previous track on scroll
+          // "on-scroll-up": "waybar-mpris --send next",
+          // "on-scroll-down": "waybar-mpris --send prev",
+      "escape": true,
+  },
+  
+  "custom/notification": {
+     "tooltip": false,
+     "format": " {icon} ",
+     "format-icons": {
+          "notification": "<span foreground='red'><sup></sup></span>",
+          "none": "",
+          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-none": "",
+          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-none": "",
+          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-none": ""
+     },
+     "return-type": "json",
+     "exec-if": "which swaync-client",
+     "exec": "swaync-client -swb",
+     "on-click": "swaync-client -t -sw",
+     "on-click-right": "swaync-client -d -sw",
+     "escape": true
+ },
+
+ "custom/scratchpadindicator": {
+  "interval": 3,
+  "return-type": "json",
+  "exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '(recurse(.nodes[]) | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [..  | (.nodes? + .floating_nodes?) // empty | .[] | select(.id |IN($scratch_ids[]))] as $scratch_nodes | if ($scratch_nodes|length) > 0 then { text: \"\\($scratch_nodes | length)\", tooltip: $scratch_nodes | map(\"\\(.app_id // .window_properties.class) (\\(.id)): \\(.name)\") | join(\"\\n\") } else empty end'",
+  "format": "{} 🗗",
+  "on-click": "exec swaymsg 'scratchpad show'",
+  "on-click-right": "exec swaymsg 'move scratchpad'"
+},
+
+ "custom/nirioverview": {
+  //"interval": 3,
+  //"return-type": "json",
+  //"exec": "niri msg -j windows| jq --unbuffered --compact-output length",
+  "format": "",
+  "on-click": "niri msg action open-overview",
+  "on-click-right": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/window-launcher.sh"
+},
+
+//========================== LAUNCHER MODULES ========================//
+
+  "custom/launcher-rofi":{
+    "format":" 󰣛 Applications",
+    "on-click": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/drun-launcher.sh",
+    "on-click-right": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/run-launcher.sh",
+    "on-click-middle": "killall waybar && waybar"
+    },
+  "custom/launcher":{
+    "format":" 󰣛 Applications",
+    "on-click": "cosmic-app-library",
+    "on-click-right": "cosmic-launcher",
+    "on-click-middle": "killall waybar && waybar"
+    },
+
+//========================== MEDIA MODULES ========================//
+"custom/media": {
+  "format": "{icon}{}",
+  "return-type": "json",
+  "format-icons": {
+      "Playing": " ",
+      "Paused": " ",
+  },
+  "max-length":70,
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\"}' -F",
+  "on-click": "playerctl play-pause",
+  },
+
+"custom/next":{
+  "format": "  ",
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{shuffle}}\", \"alt\": \"{{shuffle}}\", \"class\": \"{{shuffle}}\"}' -F",
+  "on-click": "playerctl next",
+},
+
+"custom/previous": {  
+  "format": "  ",
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{shuffle}}\", \"alt\": \"{{shuffle}}\", \"class\": \"{{shuffle}}\"}' -F",
+  "on-click": "playerctl previous",
+}, 
+
+"custom/shuffle":{
+  "format": "{icon}",
+  "return-type": "json",
+  "format-icons": {
+      "true": "  ",
+      "false": " ",
+  },
+  "max-length":70,
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{shuffle}}\", \"alt\": \"{{shuffle}}\", \"class\": \"{{shuffle}}\"}' -F",
+  "on-click": "playerctl shuffle toggle",
+},
+"custom/loop":{  
+  "format": "{icon}",
+  "return-type": "json",
+  "format-icons": {
+    "Playlist": "  ",
+    "Track": "  ",
+    "None": "  ",
+  },
+  "max-length":70,
+  "exec": "playerctl -a metadata --format '{\"text\": \"{{loop}}\", \"alt\": \"{{loop}}\", \"class\": \"{{loop}}\"}' -F",
+  "on-click": "playerctl loop none",
+  "on-click-right": "playerctl loop playlist",
+  "on-click-middle": "playerctl loop track",
+},
+
+//========================== DEFAULT MODULES ========================//
+"mpd": {
+    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+    "format-disconnected": "Disconnected ",
+    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+    "interval": 10,
+    "consume-icons": {
+        "on": " " // Icon shows only when "consume" is on
+    },
+    "random-icons": {
+        "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+        "on": " "
+    },
+    "repeat-icons": {
+        "on": " "
+    },
+    "single-icons": {
+        "on": "1 "
+    },
+    "state-icons": {
+        "paused": "",
+        "playing": ""
+    },
+    "tooltip-format": "MPD (connected)",
+    "tooltip-format-disconnected": "MPD (disconnected)"
+},
+
+"niri/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		// Named workspaces
+		// (you need to configure them in niri)
+		// Icons by state
+		"active": "",
+		"default": "",
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+	}
+},
+"sway/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "",
+    "9": "",
+    "10":"藍",
+    "focused": "",
+    "urgent": "",
+    "default": "",
+  },
+  "sort-by-number": true,
+  "smooth-scrolling-threshold": 1,
+  "persistent_workspaces": {
+//    "1":[],
+//    "2":[],
+//    "3":[],
+//    "4":[],
+//    "5":[],
+//    "6":[],
+//   "7":[],
+//    "8":[],
+//    "9":[],
+//    "10":[],
+  }
+    },
+
+"tray":{
+	"icon-size":18,
+	"spacing": 10
+    },
+
+"wlr/taskbar":{
+    "all-outputs": false,
+    "icon-size": 17,
+    "format":"{icon} {name} {short_state}",
+    "tooltip-format": "{title} {app_id} | {state}",
+    "on-click": "activate",
+    "on-click-right": "minimize",
+    "on-click-middle": "maximize",
+    "ignore-list": ["pavucontrol","nemo", "com.github.wwmm.easyeffects",],},
+
+"sway/window": {
+    "format": "  {} ",
+    "separate-outputs": true,
+    },
+
+  "niri/window": {
+    "format": "  {} ",
+    "separate-outputs": true,
+    },
+"battery": {
+        "on-click": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/powermenu.sh",
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon} ",
+        "format-charging": " {capacity}% ",
+        "format-plugged": " {capacity}% ",
+        "format-full":"󰂏 ",
+//        "format-alt": "{icon}  {capacity}% ",
+        "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+    },
+
+    "clock": {
+        "format": "{:%H:%M}  ",
+        "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "tz_up",
+                    "on-scroll-down": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+
+
+"pulseaudio":{
+  "format": " {icon} {volume}% ",
+  "format-bluetooth": "{volume}% {icon}",
+  "format-muted": "婢 0%",
+  "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+  },
+  "scroll-step": 1,
+  "on-click": "pamixer -t",
+  "on-click-middle": "sh ~/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
+  "on-click-right": "sh ~/.local/lu-dotfiles/components/toggles/pavucontrol-scratchpad",
+  "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+  
+"wireplumber":{
+  "format": " {icon} {volume}% ",
+  "format-bluetooth": "{volume}% {icon}",
+  "format-muted": "婢 0%",
+  "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+  },
+  "scroll-step": 1,
+  "on-click": "pamixer -t",
+  "on-click-middle": "sh ~/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
+  "on-click-right": "sh /home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/default-sink-pw.sh",
+  "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+
+"mpris": {
+	"format": "{player_icon} {dynamic}",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "",
+    "spotify": "阮",
+
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+    },
+}

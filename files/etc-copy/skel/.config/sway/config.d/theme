@@ -1,0 +1,40 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+# Apply gtk theming
+exec_always ~/.config/sway/scripts/endeavour/import-gsettings
+
+# Set inner/outer gaps
+gaps inner 3
+gaps outer 3
+
+# Hide titlebar on windows (normal|none|pixel):
+default_border pixel 2
+
+# Default Font
+font pango: 'URW Gothic' 12
+
+# Thin borders:
+smart_borders off
+
+# Title format for windows
+title_align center
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"
+
+# class                 border  bground text    indicator child_border
+client.focused          #1e1e1e #1e1e1e #dddddd #1e1e1e   #1e1e1e
+client.focused_inactive #0f0f0f #0f0f0f #BFBFBF #0f0f0f   #0f0f0f 
+client.unfocused        #000000 #000000 #BFBFBF #000000   #000000
+client.urgent           #000000 #000000 #cf0c23 #000000   #000000
+client.placeholder      #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.background       #111111
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    swaybar_command waybar
+}
+# Set wallpaper:
+exec sh ~/.azotebg

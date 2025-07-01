@@ -1,0 +1,30 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+#scratchpads simple
+    for_window [app_id="pavucontrol"] sticky enable,move scratchpad, floating enable, resize set width 80 ppt height 70 ppt
+    for_window [app_id="com.github.wwmm.easyeffects"] sticky enable,move scratchpad, floating enable, resize set width 80 ppt height 70 ppt
+    for_window [app_id="com.github.neithern.g4music"] move scratchpad, sticky enable, border pixel 2
+    for_window [app_id="deadbeef"] move scratchpad, sticky enable, resize set width 80 ppt height  70 ppt
+    for_window [app_id="gpaste-ui"] move scratchpad, sticky enable, resize set width 50 ppt height  70 ppt, border pixel 2
+    for_window [app_id="org.gnome.clocks"] move scratchpad, border pixel 2
+    for_window [app_id="org.gabmus.gfeeds"] move scratchpad, sticky enable, resize set width 80 ppt height 50 ppt, border pixel 2
+    for_window [class="VencordDesktop"]  resize set width 100 ppt height 50 ppt
+    for_window [app_id="emote"] sticky enable, border pixel 2
+
+#scratchpads complex
+    #(specific terminal thing)
+    for_window [app_id="terminator"] move scratchpad, sticky enable, resize set width 50 ppt height  70 ppt, scratchpad show 
+    bindsym $super+Return [app_id="terminator"] scratchpad show
+
+    #(nemo specifics)
+    for_window [app_id="nemo"] move scratchpad, sticky enable
+    bindsym $super+f [app_id="nemo"] scratchpad show
+
+    #(Spotify stuff)
+    for_window [class="Spotify"] move scratchpad, sticky enable, resize set width 80 ppt height  70 ppt
+    bindsym $super+m [class="Spotify"] scratchpad show
+    bindsym $super+Shift+m exec flatpak run com.spotify.Client && sway [class="Spotify"] scratchpad show
+
+    #(deadbeef stuff)
+    for_window [app_id="deadbeef"] floating enabled, sticky enable
+    bindsym $alt+m [app_id="deadbeef"] scratchpad show

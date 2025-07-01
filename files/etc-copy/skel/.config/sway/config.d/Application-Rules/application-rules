@@ -1,0 +1,44 @@
+include $HOME/.local/lu-dotfiles/.config/sway/config.d/keywords
+
+#app_id rules
+for_window [app_id="foot"] floating enabled, sticky enable, resize set width 30 ppt height 20 ppt
+for_window [app_id="file-roller"] floating enabled
+for_window [app_id="gscreenshot"] floating enabled
+
+#class rules { for_window [class=""] }
+for_window [class="firefox"] floating disabled
+for_window [class="Code"] floating disabled
+for_window [class="discord"] floating disabled
+for_window [class="REAPER"] floating disable
+for_window [class="Gimp-2.10"] floating disable
+for_window [class="reaper_host32"] floating enabled
+for_window [class="reaper_host32"] floating enabled
+
+for_window [app_id="org.prismlauncher.PrismLauncher"] floating enable
+#title rules
+for_window [title="Minecraft*"] floating disabled
+for_window [title="Picture-in-Picture"] floating enable, sticky enable
+for_window [title="Picture in picture"] floating enable, sticky enable
+for_window [title="MiniPlayer"] floating enable, sticky enable
+
+
+
+#---------------------WORKSPACE RULES----------------------#
+#workspace 1
+assign [app_id="vesktop"] 1
+assign [class="discord"] 1
+
+#workspace 2
+#assign [class="REAPER"] 2
+assign [class="Ferdium"] 2
+#assign [app_id="FFPWA-01GZGZBKBMRD4WXVKX67YZ7AHV"] 2
+
+#workspace 3
+#assign [class="firefox"] 3
+
+#workspace 4
+#assign [class="Code"] 4
+
+#assign [title="Minecraft*"] 11
+#assign [app_id="org.prismlauncher.PrismLauncher"] 11
+#assign [app_id="kitty"] 10

@@ -54,6 +54,7 @@ jobs:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.8
         with:
+          rechunk: true
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}

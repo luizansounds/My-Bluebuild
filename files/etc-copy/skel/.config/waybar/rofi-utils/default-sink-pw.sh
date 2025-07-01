@@ -1,7 +1,7 @@
 #!/bin/bash
 #home/luiza/.config/waybar/rofi-utils/style-7.rasi
 
-source /home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/shared/theme-selector
+source $HOME.ssd/extra/settings/dotfiles/waybar/rofi-utils/shared/theme-selector
 
 # Create an associative array
 declare -A sinks

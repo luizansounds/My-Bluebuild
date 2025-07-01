@@ -1,7 +1,7 @@
 //========================== CUSTOM MODULES ========================//
 {    
   "custom/workspaces": {
-    "exec": "/home/luiza/.ssd/extra/settings/lu-dotfiles/components/waybar-components/workspaces.sh \"$WAYBAR_OUTPUT_NAME\"",
+    "exec": "$HOME/.ssd/extra/settings/lu-dotfiles/components/waybar-components/workspaces.sh \"$WAYBAR_OUTPUT_NAME\"",
     "signal": 8,
     "on-scroll-up": "niri msg action focus-workspace-up",
     "on-scroll-down": "niri msg action focus-workspace-down",
@@ -15,7 +15,7 @@
 
   "custom/power":{
     "format": " ",
-    "on-click": "~/.config/sway/scripts/Rofi/Scripts/archcraft/powermenu",
+    "on-click": "$HOME/.config/sway/scripts/Rofi/Scripts/archcraft/powermenu",
     },
   
   "custom/updater":{
@@ -78,15 +78,15 @@
   //"exec": "niri msg -j windows| jq --unbuffered --compact-output length",
   "format": "",
   "on-click": "niri msg action open-overview",
-  "on-click-right": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/window-launcher.sh"
+  "on-click-right": "$HOME/.ssd/extra/settings/dotfiles/waybar/rofi-utils/window-launcher.sh"
 },
 
 //========================== LAUNCHER MODULES ========================//
 
   "custom/launcher-rofi":{
     "format":" 󰣛 Applications",
-    "on-click": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/drun-launcher.sh",
-    "on-click-right": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/run-launcher.sh",
+    "on-click": "$HOME/.ssd/extra/settings/dotfiles/waybar/rofi-utils/drun-launcher.sh",
+    "on-click-right": "$HOME/.ssd/extra/settings/dotfiles/waybar/rofi-utils/run-launcher.sh",
     "on-click-middle": "killall waybar && waybar"
     },
   "custom/launcher":{
@@ -182,8 +182,6 @@
 		// Icons by state
 		"active": "",
 		"default": "",
-    "on-scroll-up": "niri msg action focus-workspace-up",
-    "on-scroll-down": "niri msg action focus-workspace-down",
 	}
 },
 "sway/workspaces": {
@@ -245,7 +243,7 @@
     "separate-outputs": true,
     },
 "battery": {
-        "on-click": "/home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/powermenu.sh",
+        "on-click": "$HOME/.ssd/extra/settings/dotfiles/waybar/rofi-utils/powermenu.sh",
         "states": {
             "good": 95,
             "warning": 30,
@@ -301,8 +299,8 @@
   },
   "scroll-step": 1,
   "on-click": "pamixer -t",
-  "on-click-middle": "sh ~/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
-  "on-click-right": "sh ~/.local/lu-dotfiles/components/toggles/pavucontrol-scratchpad",
+  "on-click-middle": "sh $HOME/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
+  "on-click-right": "sh $HOME/.local/lu-dotfiles/components/toggles/pavucontrol-scratchpad",
   "ignored-sinks": ["Easy Effects Sink"]
     },
 
@@ -322,8 +320,8 @@
   },
   "scroll-step": 1,
   "on-click": "pamixer -t",
-  "on-click-middle": "sh ~/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
-  "on-click-right": "sh /home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/default-sink-pw.sh",
+  "on-click-middle": "sh $HOME/.local/lu-dotfiles/components/toggles/easyeffects-scratchpad",
+  "on-click-right": "sh $HOME/.ssd/extra/settings/dotfiles/waybar/rofi-utils/default-sink-pw.sh",
   "ignored-sinks": ["Easy Effects Sink"]
     },
 

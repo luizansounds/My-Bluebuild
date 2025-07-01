@@ -413,7 +413,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: Guake" { spawn "guake"; }
-    Mod+z hotkey-overlay-title="Run an Application: Rofi" { spawn "~/.ssd/extra/settings/dotfiles/waybar/rofi-utils/drun-launcher.sh"; }
+    Mod+z hotkey-overlay-title="Run an Application: Rofi" { spawn "$HOME/.ssd/extra/settings/dotfiles/waybar/rofi-utils/drun-launcher.sh"; }
     Mod+e hotkey-overlay-title="Open File Manager:  Nemo" { spawn "nemo"; }
 
 

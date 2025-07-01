@@ -1,2 +1,3 @@
-!#/usr/bin/env sh
-mympd -a /home/luiza/.cache/mympd -w /home/luiza/.config/mympd
+#!/usr/bin/env sh
+
+mympd -a $HOME/.cache/mympd -w $HOME/.config/mympd

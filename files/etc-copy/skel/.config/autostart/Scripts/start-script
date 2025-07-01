@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 spotifyd -u elatetunic@gmail.com -d PC-DAEMON --device-type speaker --volume-normalisation --autoplay --password lblue135-
 
-rm -rf /home/luiza/.config/vivaldi/SingletonCookie /home/luiza/.config/vivaldi/SingletonLock /home/luiza/.config/vivaldi/SingletonSocket
+rm -rf $HOME/.config/vivaldi/SingletonCookie $HOME/.config/vivaldi/SingletonLock $HOME/.config/vivaldi/SingletonSocket
 
 pw-loopback --capture-props='node.target=youroutput' --playback-props='media.class=Audio/Source node.name=virtmic node.description="audio-loopback(use qpwgraph)"'

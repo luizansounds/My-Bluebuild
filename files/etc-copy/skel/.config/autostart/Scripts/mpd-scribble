@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
-/usr/bin/mpdscribble --conf /home/luiza/.ssd/extra/settings/dotfiles/mpdscribble/mpdscribble.conf
+
+/usr/bin/mpdscribble --conf $HOME/.ssd/extra/settings/dotfiles/mpdscribble/mpdscribble.conf

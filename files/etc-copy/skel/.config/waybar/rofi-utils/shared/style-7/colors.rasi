@@ -15,4 +15,5 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.local/share/rofi/themes/rounded-purple-dark.rasi"
+@import "$HOME/.local/share/rofi/themes/rounded-purple-dark.rasi"
+s

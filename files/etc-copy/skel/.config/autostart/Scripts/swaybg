@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-swaybg -i Pictures/wallpaper/7VmQPyma_400x400.jpg
+swaybg -i $HOME/Pictures/wallpaper/7VmQPyma_400x400.jpg

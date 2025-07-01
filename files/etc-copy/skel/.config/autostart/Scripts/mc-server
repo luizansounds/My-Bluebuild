@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
+
 podman start noip-duc
 tmux new -d -s minecraft-server
-tmux send-keys -t minecraft-server.0 "cd /home/luiza/.extra/minecraft-server" ENTER
+tmux send-keys -t minecraft-server.0 "cd $HOME/.extra/minecraft-server" ENTER
 tmux send-keys -t minecraft-server.0 "java -Xmx2G -jar fabric-server-mc.1.21-loader.0.15.11-launcher.1.0.1.jar nogui" ENTER

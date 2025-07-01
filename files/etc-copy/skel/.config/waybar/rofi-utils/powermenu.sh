@@ -6,7 +6,7 @@
 ## Applets : Power Menu
 
 # Import Current Theme
-source /home/luiza/.ssd/extra/settings/dotfiles/waybar/rofi-utils/shared/theme-selector
+source $home/.ssd/extra/settings/dotfiles/waybar/rofi-utils/shared/theme-selector
 
 # Theme Elements
 prompt="`hostname`"

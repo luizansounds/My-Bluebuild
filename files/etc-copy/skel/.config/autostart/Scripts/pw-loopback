@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
+
 pw-loopback --capture-props='node.target=youroutput' --playback-props='media.class=Audio/Source node.name=virtmic node.description="audio-loopback(use qpwgraph)"' &

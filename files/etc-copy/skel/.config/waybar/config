@@ -18,7 +18,7 @@
 		"modules-center": ["clock",],
 		"modules-right": ["custom/notification","custom/separator","wireplumber","custom/separator","battery",],
 	
-	"include": "~/.config/waybar/Modules.json",
+	"include": "$HOME/.config/waybar/Modules.json",
 	},
 
 	{
@@ -39,6 +39,6 @@
 			"modules-center": ["wlr/taskbar",],
 			"modules-right": ["tray"],
 		
-		"include": "~/.config/waybar/Modules.json",
+		"include": "$HOME/.config/waybar/Modules.json",
 		},
 ]

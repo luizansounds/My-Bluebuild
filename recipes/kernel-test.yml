@@ -5,13 +5,11 @@
     repos:
      cleanup: true
      copr:
-         - alternateved/eza
+         - kwizart/kernel-longterm-6.12
     
     install:
      skip-unavailable: false
      allow-erasing: true
      install-weak-deps: false
      packages:
-
-
-    remove:
+         - kernel-longterm

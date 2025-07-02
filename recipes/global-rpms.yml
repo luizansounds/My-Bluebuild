@@ -4,7 +4,7 @@ modules:
   - type: files
     files:
     - source: usr-copy   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
-      destination: /var/usr/share
+      destination: /usr/share
       
   - type: bling
     install:
@@ -39,19 +39,21 @@ modules:
      packages:
          #- repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
          #  packages:
-         #- wine-9.4-12.wine_tkg.fc42.x86_64 
-         - wine
-         - wine-mono
-         - mingw32-wine-gecko
-         - mingw64-wine-gecko
-         - wine-dxvk
-         - winetricks
-         - yabridge
+             name: Create and Upload ISO
+    runs-on: ubuntu-latest
+    steps: 
+         #- wine
+         #- wine-mono
+         #- mingw32-wine-gecko
+         #- mingw64-wine-gecko
+         #- wine-dxvk
+         #- winetricks
+         #- yabridge
          - libcurl-gnutls
          - zellij
          - mommy 
-         - mympd #(jcorporation)
-         - mpd #(RPM-Fusion)
+         #- mympd #(jcorporation)
+         #- mpd #(RPM-Fusion)
          
          ##MAIN##
          - rust
@@ -60,9 +62,9 @@ modules:
          - go
          - npm
          - pnpm
-         - zsh
-         - zsh-autosuggestions
-         - zsh-syntax-highlighting 
+         #- zsh
+         #- zsh-autosuggestions
+         #- zsh-syntax-highlighting 
          - tmux
          - dialog 
          - unrar
@@ -73,7 +75,7 @@ modules:
          - mc
          - fastfetch
          - pamixer
-         - playerctl
+         #- playerctl
          - steam-devices
          - ffmpeg
          - cava
@@ -88,26 +90,26 @@ modules:
          - libayatana-appindicator-gtk3 
          - java-21-openjdk
          - neovim
-         - mpc
-         - ncmpcpp
-         - mpdscribble
+         #- mpc
+         #- ncmpcpp
+         #- mpdscribble
          - elinks
          - igt-gpu-tools
          - dex-autostart
          - transmission-daemon
-         - realtime-setup
+         #- realtime-setup
          - bluez-tools
          - bluez-deprecated
          - android-tools
          - zenity
-         - calf
-         - easyeffects
-         - lv2-calf-plugins
-         - lv2-calf-plugins-gui
-         - lsp-plugins-lv2
-         - lv2-zam-plugins
-         - lv2-mdala-plugins
-         - carla
+         #- calf
+         #- easyeffects
+         #- lv2-calf-plugins
+         #- lv2-calf-plugins-gui
+         #- lsp-plugins-lv2
+         #- lv2-zam-plugins
+         #- lv2-mdala-plugins
+         #- carla
          - usbutils
          - pciutils
          - lazygit

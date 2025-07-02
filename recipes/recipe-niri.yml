@@ -16,7 +16,6 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: global-rpms.yml
-  - from-file: kernel-test.yml
 
   - type: files
     files:
@@ -27,6 +26,8 @@ modules:
   - type: dnf
     repos:
      copr:
+      - kwizart/kernel-longterm-6.12
+     
       #- mjg/rofi-wayland 
       - hazel-bunny/ricing
       - tofik/nwg-shell
@@ -40,6 +41,7 @@ modules:
      allow-erasing: true
      install-weak-deps: false
      packages:
+         - kernel-longterm
          - font-manager
          - transmission-gtk
          - guake

@@ -16,6 +16,7 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: global-rpms.yml
+  - from-file: kernel-test.yml
 
   - type: files
     files:
@@ -59,15 +60,15 @@ modules:
          - xdg-desktop-portal-gnome
          - xdg-desktop-portal-gtk
          - nwg-look
-         #- dex-autostart
+         - dex-autostart
          - SwayNotificationCenter
          - rofi-wayland
-         #- swww
-         #- sway
-         #- cage
-         #- gtkgreet
-         #- tuigreet
-         #- greetd-fakegreet
+         - swww
+         - sway
+         - cage
+         - gtkgreet
+         - tuigreet
+         - greetd-fakegreet
   
   #- type: systemd
   #  system:

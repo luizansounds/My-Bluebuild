@@ -20,7 +20,7 @@ jobs:
         image_tag: latest
         version: 41
         variant: server
-        iso_name: blue-sounds.iso
+        iso_name: blue-sounds-niri.iso
 
 # This example is for uploading your ISO as a Github artifact. You can do something similar using any cloud storage, so long as you copy the output
     - name: Upload ISO as artifact

@@ -18,13 +18,13 @@ modules:
      cleanup: true
      copr:
          - patrickl/wine-tkg
-         #- patrickl/wine-mono
+         - patrickl/wine-mono
          #- patrickl/mingw-wine-gecko
-         #- patrickl/vkd3d
-         #- patrickl/wine-dxvk
-         #- patrickl/winetricks
-         #- patrickl/yabridge
-         #- patrickl/libcurl-gnutls
+         - patrickl/vkd3d
+         - patrickl/wine-dxvk
+         - patrickl/winetricks
+         - patrickl/yabridge
+         - patrickl/libcurl-gnutls
          - szpadel/spotifyd 
          - varlad/zellij 
          - fwdekker/mommy

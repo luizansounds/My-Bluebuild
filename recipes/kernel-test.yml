@@ -3,7 +3,6 @@
 modules:
  - type: dnf
     repos:
-     cleanup: true
      copr:
          - kwizart/kernel-longterm-6.12
     

@@ -62,12 +62,12 @@ modules:
          #- dex-autostart
          - SwayNotificationCenter
          - rofi-wayland
-         - swww
-         - sway
-         - cage
-         - gtkgreet
-         - tuigreet
-         - greetd-fakegreet
+         #- swww
+         #- sway
+         #- cage
+         #- gtkgreet
+         #- tuigreet
+         #- greetd-fakegreet
   
   #- type: systemd
   #  system:

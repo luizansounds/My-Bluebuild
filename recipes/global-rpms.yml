@@ -37,11 +37,6 @@ modules:
      allow-erasing: true
      install-weak-deps: false
      packages:
-         #- repo: copr:copr.fedorainfracloud.org:patrickl:wine-tkg
-         #  packages:
-             name: Create and Upload ISO
-    runs-on: ubuntu-latest
-    steps: 
          #- wine
          #- wine-mono
          #- mingw32-wine-gecko

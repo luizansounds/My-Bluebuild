@@ -1,1 +1,17 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
+ - type: dnf
+    repos:
+     cleanup: true
+     copr:
+         - alternateved/eza
+    
+    install:
+     skip-unavailable: false
+     allow-erasing: true
+     install-weak-deps: false
+     packages:
+
+
+    remove:

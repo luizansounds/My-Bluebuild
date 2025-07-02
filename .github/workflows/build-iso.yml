@@ -18,7 +18,7 @@ jobs:
         image_name: blue-sounds-niri
         image_repo: ghcr.io/luizansounds
         image_tag: latest
-        version: 42
+        version: 41
         variant: server
         iso_name: blue-sounds.iso
 

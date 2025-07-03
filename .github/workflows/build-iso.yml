@@ -6,8 +6,39 @@ on:
   workflow_dispatch:
 
 jobs:
+
+ bluebuild:
+    name: Build Custom Image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    strategy:
+      fail-fast: true # stop GH from cancelling all matrix builds if one fails
+      matrix:
+        recipe:
+          # !! Add your recipes here 
+          - recipe-plasma.yml
+          - recipe-niri.yml
+          #- recipe-cosmic.yml
+          #- recipe-sway.yml
+          #- recipe-cosmic-sway.yml
+
+    steps:
+       # the build is fully handled by the reusable github action
+      - name: Build Custom Image
+        uses: blue-build/github-action@v1.8
+        with:
+          rechunk: true
+          recipe: ${{ matrix.recipe }}
+          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          pr_event_number: ${{ github.event.number }}
+  
   iso-niri:    
     name: Create and Upload ISO
+    needs: bluebuild
     runs-on: ubuntu-latest
     steps:
     - name: Build ISO
@@ -37,6 +68,7 @@ jobs:
   iso-plasma:    
     name: Create and Upload ISO
     runs-on: ubuntu-latest
+    needs: bluebuild
     steps:
     - name: Build ISO
       uses: jasonn3/build-container-installer@main

@@ -15,7 +15,7 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: global-rpms.yml
+  #- from-file: global-rpms.yml
 
   - type: files
     files:
@@ -27,7 +27,6 @@ modules:
     repos:
      copr:
       #- kwizart/kernel-longterm-6.12
-     
       #- mjg/rofi-wayland 
       - hazel-bunny/ricing
       - tofik/nwg-shell
@@ -71,30 +70,13 @@ modules:
          - gtkgreet
          - tuigreet
          - greetd-fakegreet
+     remove:
+      packages:
+         - just
   
   #- type: systemd
   #  system:
   #    enable:
   #    - greetd.service
-                  
-  - type: brew
-    # Auto-update Brew binary
-    auto-update: true # Optional - Default: true - Expects type: boolean
-    # Interval between Brew updates
-    update-interval: '6h' # Optional - Default: '6h' - Expects type: string
-    # Time delay after boot before first Brew update
-    update-wait-after-boot: '10min' # Optional - Default: '10min' - Expects type: string
-    # Auto-upgrade Brew packages
-    auto-upgrade: true # Optional - Default: true - Expects type: boolean
-    # Interval between Brew package upgrades
-    upgrade-interval: '8h' # Optional - Default: '8h' - Expects type: string
-    # Time delay after boot before first Brew upgrade
-    upgrade-wait-after-boot: '30min' # Optional - Default: '30min' - Expects type: string
-    # Apply nofile limits for Brew installations
-    nofile-limits: false # Optional - Default: false - Expects type: boolean 
-    # Control Brew analytics
-    brew-analytics: true # Optional - Default: true - Expects type: boolean
-  
-
         
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

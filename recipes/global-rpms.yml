@@ -60,6 +60,7 @@ modules:
          - zsh
          - zsh-autosuggestions
          - zsh-syntax-highlighting 
+         - fish
          - tmux
          - dialog 
          - unrar

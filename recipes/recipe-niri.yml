@@ -44,7 +44,8 @@ modules:
          #- kernel-longterm
          - font-manager
          - transmission-gtk
-         - guake
+         - alacritty
+         #- guake
          - matugen
          - waybar
          - network-manager-applet

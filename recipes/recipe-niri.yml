@@ -45,6 +45,7 @@ modules:
          - font-manager
          - transmission-gtk
          - alacritty
+         - foot
          #- guake
          - matugen
          - waybar

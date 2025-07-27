@@ -24,8 +24,8 @@ modules:
          #- patrickl/wine-dxvk
          #- patrickl/winetricks
          #- patrickl/yabridge
-         - patrickl/libcurl-gnutls
-         - szpadel/spotifyd 
+         #- patrickl/libcurl-gnutls
+         #- szpadel/spotifyd 
          - varlad/zellij 
          - fwdekker/mommy
          - ycollet/audinux

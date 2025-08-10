@@ -1,0 +1,119 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+modules:
+  - type: files
+    files:
+    - source: usr-copy   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+      destination: /usr
+      
+  - type: bling
+    install:
+    - rpmfusion
+
+  #WINE-TKG AND LIBCURL-GNUTILS FOR MUSIC PRODUCTION
+  - type: dnf
+    repos:
+     files:
+         - https://download.opensuse.org/repositories/home:/jcorporation/Fedora_%OS_VERSION%/home:jcorporation.repo
+     cleanup: true
+     copr:
+         - patrickl/wine-tkg
+         #- patrickl/wine-mono
+         #- patrickl/mingw-wine-gecko
+         #- patrickl/vkd3d
+         #- patrickl/wine-dxvk
+         #- patrickl/winetricks
+         #- patrickl/yabridge
+         #- patrickl/libcurl-gnutls
+         #- szpadel/spotifyd 
+         - varlad/zellij 
+         - fwdekker/mommy
+         - ycollet/audinux
+         - lchh/navidrome
+         - atim/lazygit
+         - alternateved/eza
+    install:
+     skip-unavailable: false
+     allow-erasing: true
+     install-weak-deps: false
+     packages:
+         - wine
+         - wine-mono
+         - mingw32-wine-gecko
+         - mingw64-wine-gecko
+         - wine-dxvk
+         - winetricks
+         - yabridge
+         - libcurl-gnutls
+         - zellij
+         - mommy 
+         - mympd #(jcorporation)
+         - mpd #(RPM-Fusion)
+         
+         ##MAIN##
+         - rust
+         - cargo    
+         - python-pip
+         - go
+         - npm
+         - pnpm
+         - zsh
+         - zsh-autosuggestions
+         - zsh-syntax-highlighting 
+         - fish
+         - tmux
+         - dialog 
+         - unrar
+         - p7zip 
+         - p7zip-plugins
+         - pavucontrol
+         - btop
+         - mc
+         - fastfetch
+         - pamixer
+         - playerctl
+         - steam-devices
+         - ffmpeg
+         - cava
+         - fftw3
+         - cronie
+         - cronie-anacron
+         - cmake 
+         - meson
+         - ninja-build
+         - nu
+         - virt-manager
+         - libayatana-appindicator-gtk3 
+         - java-21-openjdk
+         - neovim
+         - mpc
+         - ncmpcpp
+         - mpdscribble
+         - elinks
+         - igt-gpu-tools
+         - dex-autostart
+         - transmission-daemon
+         - realtime-setup
+         - bluez-tools
+         - bluez-deprecated
+         - android-tools
+         - zenity
+         - calf
+         - easyeffects
+         - lv2-calf-plugins
+         - lv2-calf-plugins-gui
+         - lsp-plugins-lv2
+         - lv2-zam-plugins
+         - lv2-mdala-plugins
+         - carla
+         - usbutils
+         - pciutils
+         - lazygit
+         - eza
+
+    remove:
+     packages:
+         - firefox
+         - firefox-langpacks
+         - nvtop
+         - just

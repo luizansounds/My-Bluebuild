@@ -49,7 +49,6 @@ modules:
          - pipewire
          - pipewire-pulse
          - pipewire-alsa
-         - pipewire-jack
 
          #- kernel-longterm
          - font-manager

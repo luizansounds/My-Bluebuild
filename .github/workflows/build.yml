@@ -23,7 +23,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
-          - recipe-niri.yml
+          #- recipe-niri.yml
           - recipe-niri-b.yml
 
     steps:

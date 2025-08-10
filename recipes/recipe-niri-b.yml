@@ -44,7 +44,7 @@ modules:
      allow-erasing: true
      install-weak-deps: false
      packages:
-         - networkmanager
+         - NetworkManager
          - wireplumber
          - pipewire
          - pipewire-pulse

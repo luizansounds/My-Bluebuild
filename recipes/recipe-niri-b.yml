@@ -45,12 +45,13 @@ modules:
      install-weak-deps: false
      packages:
          #- NetworkManager
-         - wireplumber
-         - pipewire
-         - pipewire-pulse
-         - pipewire-alsa
+         #- wireplumber
+         #- pipewire
+         #- pipewire-pulse
+         #- pipewire-alsa
 
          #- kernel-longterm
+         - alsa-tools
          - font-manager
          - transmission-gtk
          - alacritty

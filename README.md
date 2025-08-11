@@ -23,6 +23,10 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/luizansounds/blue-sounds-swayfx:latest
   ```
+  
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/luizansounds/blue-sounds-niri:latest
+  ```****
 
 - Reboot to complete the rebase:
   ```
@@ -39,6 +43,10 @@ To rebase an existing atomic Fedora installation to the latest build:
 
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luizansounds/blue-sounds-swayfx:latest
+  ```
+  
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luizansounds/blue-sounds-niri:latest
   ```
 - Reboot again to complete the installation
   ```

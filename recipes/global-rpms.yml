@@ -110,6 +110,7 @@ modules:
          - pciutils
          - lazygit
          - eza
+         - qt6ct
 
     remove:
      packages:
